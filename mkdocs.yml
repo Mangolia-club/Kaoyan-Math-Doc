@@ -1,15 +1,6 @@
 site_name: 线性代数 Linear Algebra
 theme:
   name: material
-  language: en
-  custom_dir: custom
-  favicon: assets/favicon.png
   palette:
     primary: teal
     accent: blue
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    logo: fontawesome/solid/globe-americas
-    repo: fontawesome/brands/github
