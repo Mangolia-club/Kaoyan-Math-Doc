@@ -1,7 +1,7 @@
-site_name: My Docs
+site_name:线性代数 Linear Algebra
 theme:
   name: material
-  palette:
+palette:
       scheme:slate
       primary:blue grey
       
