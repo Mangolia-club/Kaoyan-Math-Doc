@@ -1,7 +1,13 @@
 site_name:线性代数 Linear Algebra
 theme:
   name: material
+<<<<<<< 9fbe25f2c68cabf523dd813167effab887b6b91c
 palette:
       scheme:slate
       primary:blue grey
       
+=======
+  palette:
+    primary: teal
+    accent: blue
+>>>>>>> 修复yml错误
