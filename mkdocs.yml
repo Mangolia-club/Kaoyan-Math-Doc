@@ -1,6 +1,6 @@
 site_name:线性代数 Linear Algebra
-theme: 
+theme:
   name: material
-  palette: 
+  palette:
     primary: teal
     accent: blue
