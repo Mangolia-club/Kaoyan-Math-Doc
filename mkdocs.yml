@@ -25,4 +25,9 @@ markdown_extensions:
       generic: true
 repo_url: https://github.com/RadleyJiao/Linearalgebra
 repo_name: RadleyJiao/Linearalgebra
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
 
