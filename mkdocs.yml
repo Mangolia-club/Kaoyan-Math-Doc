@@ -1,8 +1,6 @@
 site_name: 线性代数 Linear Algebra
 theme:
   name: material
-  font:
-      text: Liu Jian Mao Cao
   palette:
     - scheme: default
       toggle:
