@@ -1,4 +1,4 @@
-site_name: 线性代数 Linear Algebra
+site_name: 考研数学文档 Kmath
 theme:
   name: material
   palette:
@@ -23,8 +23,8 @@ extra_javascript:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-repo_url: https://github.com/RadleyJiao/Linearalgebra
-repo_name: RadleyJiao/Linearalgebra
+repo_url: https://github.com/RadleyJiao/Kaoyan-Math-Doc
+repo_name: RadleyJiao/Kaoyan-Math-Doc
 plugins:
   - search:
       lang:

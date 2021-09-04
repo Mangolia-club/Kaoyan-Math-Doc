@@ -23,6 +23,13 @@
 如有缺漏，可能是我觉得比较基础（还没学到）的内容，可以提交issue。
 
 ## 相关链接
+* 在这放一些我找到的比较有用的网络资源链接
+
+(github)[全国研究生入学考试数一\数二真题及解析1999-2019](https://github.com/fjh1997/China-NPEE-math)
+
+(github)[考研数学同济高等数学第七版线性代数浙大概率论](https://github.com/Yoget/Tongji-University-Advanced-Mathematics)(PDF的还不错)
+
+(github)[考研数学一知识点和习题](https://github.com/Didnelpsun/Math)(来源好像是张宇和660)
 
 我Fork的[CLRS Solutions](https://walkccc.me/CLRS/)：http://clrs.mangolia.club/
 
