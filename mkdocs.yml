@@ -20,9 +20,15 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - javascripts/config.js
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
 repo_url: https://github.com/RadleyJiao/Kaoyan-Math-Doc
 repo_name: RadleyJiao/Kaoyan-Math-Doc
 plugins:
@@ -30,4 +36,6 @@ plugins:
       lang:
         - en
         - ja
-
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
+  - stylesheets/extra.css
