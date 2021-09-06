@@ -1,8 +1,12 @@
 # Kaoyan-Math-Doc（Kmath）
- ##### <p align="right">2021.09.04</p>
+<p align="right">2021.09.04</p>
+ <script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/Radleyjiao/Kaoyan-Math-Doc" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-show-count="true" aria-label="Star Radleyjiao/Kaoyan-Math-Doc on GitHub">Star</a>
+
 基于[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)（[Github项目地址](https://github.com/squidfunk/mkdocs-material)）的考研数学知识复习自用文档(本人是摸鱼党数学一考生)。
 
-使用Markdown、LaTex编辑。欢迎补充~
+使用![](https://img.shields.io/badge/Markdown-239120.svg?logo=markdown&style=flat-square)
+、LaTex编辑。欢迎补充~
 
 ## 关于我
 
@@ -21,6 +25,8 @@
 目前在根据自己的学习进度更新中，大概会在21（或者22年）年底更新完成。
 
 如有缺漏，可能是我觉得比较基础（还没学到）的内容，可以提交issue。
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/Radleyjiao/Kaoyan-Math-Doc/issues" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-issue-opened" data-show-count="true" aria-label="Issue Radleyjiao/Kaoyan-Math-Doc on GitHub">Issue</a>
 
 ## 相关链接
 * 在这放一些我找到的比较有用的网络资源链接
