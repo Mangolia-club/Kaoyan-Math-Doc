@@ -39,3 +39,13 @@ plugins:
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
   - stylesheets/extra.css
+nav:
+  - 高等数学:
+    - 函数极限: 高等数学/函数极限.md
+    - 数列极限: 高等数学/数列极限.md
+  - 线性代数:
+    - 行列式与矩阵: 线性代数/行列式与矩阵.md
+    - 秩与向量: 线性代数/秩与向量.md
+    - 线性方程组: 线性代数/线性方程组.md
+  - 概率论:
+    - chap1: chap1.md
