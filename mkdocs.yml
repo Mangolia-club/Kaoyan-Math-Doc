@@ -16,6 +16,10 @@ theme:
       primary: black
   icon:
     repo: fontawesome/brands/github
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -29,6 +33,14 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - admonition
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - toc:
+      permalink: true
+
 repo_url: https://github.com/RadleyJiao/Kaoyan-Math-Doc
 repo_name: RadleyJiao/Kaoyan-Math-Doc
 plugins:
