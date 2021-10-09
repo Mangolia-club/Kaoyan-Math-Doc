@@ -1,3 +1,3 @@
-d:
-cd D:\Radley\Project\Git\Kaoyan-Math-Doc
+g:
+cd G:\Radley\Project\Git\Kaoyan-Math-Doc
 mkdocs serve

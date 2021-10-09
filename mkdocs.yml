@@ -27,12 +27,13 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
   - javascripts/config.js
 markdown_extensions:
+  - admonition
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
-  - admonition
   - pymdownx.smartsymbols
   - pymdownx.caret
   - pymdownx.mark
@@ -55,6 +56,9 @@ nav:
   - 高等数学:
     - 函数极限: 高等数学/函数极限.md
     - 数列极限: 高等数学/数列极限.md
+    - 连续、间断与导数: 高等数学/连续、间断与导数.md
+    - 中值定理: 高等数学/中值定理.md
+    - 不定积分: 高等数学/不定积分.md
   - 线性代数:
     - 行列式与矩阵: 线性代数/行列式与矩阵.md
     - 秩与向量: 线性代数/秩与向量.md
@@ -62,3 +66,4 @@ nav:
     - 特征值与特征向量: 线性代数/特征值与特征向量.md
   - 概率论:
     - chap1: chap1.md
+  - 其他相关概念: 其他相关概念.md
