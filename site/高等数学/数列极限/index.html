@@ -1,0 +1,1188 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>数列极限 - 考研数学文档 Kmath</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="考研数学文档 Kmath" class="md-header__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            考研数学文档 Kmath
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              数列极限
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-tabs__link md-tabs__link--active">
+        高等数学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-tabs__link">
+        线性代数
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chap1.md" class="md-tabs__link">
+        概率论
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-tabs__link">
+      其他相关概念
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="考研数学文档 Kmath" class="md-nav__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    考研数学文档 Kmath
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      <label class="md-nav__link" for="__nav_1">
+        高等数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="高等数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          高等数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-nav__link">
+        函数极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          数列极限
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        数列极限
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    性质
+  </a>
+  
+    <nav class="md-nav" aria-label="性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    区位
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    列与子列极限的关系
+  </a>
+  
+    <nav class="md-nav" aria-label="列与子列极限的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    题型
+  </a>
+  
+    <nav class="md-nav" aria-label="题型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    裂项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    合并项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    夹逼定理求解
+  </a>
+  
+    <nav class="md-nav" aria-label="夹逼定理求解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lefta_nright" class="md-nav__link">
+    证明数列 \(\left\{a_{n}\right\}\) 极限存在
+  </a>
+  
+    <nav class="md-nav" aria-label="证明数列 \(\left\{a_{n}\right\}\) 极限存在">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    练习题
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#660-no12" class="md-nav__link">
+    660 No.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-no14" class="md-nav__link">
+    660 No.14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-no130" class="md-nav__link">
+    660 No.130
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        连续、间断与导数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        中值定理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        积分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        微分方程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BA%A7%E6%95%B0%E5%88%A4%E6%95%9B/" class="md-nav__link">
+        级数判敛
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        线性代数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="线性代数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        行列式与矩阵
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-nav__link">
+        秩与向量
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        线性方程组
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-nav__link">
+        特征值与特征向量
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        概率论
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chap1.md" class="md-nav__link">
+        chap1
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其他相关概念
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    性质
+  </a>
+  
+    <nav class="md-nav" aria-label="性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    区位
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    列与子列极限的关系
+  </a>
+  
+    <nav class="md-nav" aria-label="列与子列极限的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    题型
+  </a>
+  
+    <nav class="md-nav" aria-label="题型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    裂项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    合并项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    夹逼定理求解
+  </a>
+  
+    <nav class="md-nav" aria-label="夹逼定理求解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lefta_nright" class="md-nav__link">
+    证明数列 \(\left\{a_{n}\right\}\) 极限存在
+  </a>
+  
+    <nav class="md-nav" aria-label="证明数列 \(\left\{a_{n}\right\}\) 极限存在">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    练习题
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#660-no12" class="md-nav__link">
+    660 No.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-no14" class="md-nav__link">
+    660 No.14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-no130" class="md-nav__link">
+    660 No.130
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/edit/master/docs/高等数学/数列极限.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">数列极限（施工中）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=488846&auto=0&height=66"></iframe>
+
+<blockquote>
+<p>Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.
+-Morpheus</p>
+<p>很遗憾, 矩阵是什么是说不清的。你必须得自己亲眼看看。
+—— 墨菲斯</p>
+</blockquote>
+<h2 id="_2">性质<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">区位<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">列与子列极限的关系<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>若列极限存在, 则其任意 子列极限也存在且相等.</li>
+</ul>
+<p><strong>推论:</strong></p>
+<p><span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}\)</span> 存在<span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{2 n}\)</span> 与 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{2 n-1}\)</span> 都存在且相等.</p>
+<p>//并不只对2n和2n-1成立</p>
+<p><strong>用于：</strong></p>
+<p><strong><mark class="critic">表达周期函数的周期</mark></strong></p>
+<p><strong><mark class="critic">数列极限<span class="arithmatex">\(\Rightarrow\)</span>函数极限</mark></strong></p>
+<h4 id="_5">例题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \sin \frac{1}{x}\)</span> 是否存在.</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>取 <span class="arithmatex">\(x_{n}=\frac{1}{2 n \pi}(n=1,2, \cdots)\)</span>, 显然 <span class="arithmatex">\(x_{n} \rightarrow 0(n \rightarrow \infty)\)</span> 为 <span class="arithmatex">\(x \rightarrow 0\)</span> 的一个子列,</p>
+<div class="arithmatex">\[
+\lim \limits_{n \rightarrow \infty} \sin \frac{1}{x_{n}}=\lim \limits_{n \rightarrow \infty} \sin 2 n \pi=0
+\]</div>
+<p>取 <span class="arithmatex">\(y_{n}=\frac{1}{2 n \pi+\frac{\pi}{2}}(n=1,2, \cdots)\)</span>, 显然 <span class="arithmatex">\(y_{n} \rightarrow 0(n \rightarrow \infty)\)</span> 为 <span class="arithmatex">\(x \rightarrow 0\)</span> 的又一个子列,</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} \sin \frac{1}{y_{n}}=\lim _{n \rightarrow \infty} \sin \left(2 n \pi+\frac{\pi}{2}\right)=1
+\]</div>
+<p>故 <span class="arithmatex">\(\lim _{x \rightarrow 0} \sin \frac{1}{x}\)</span> 不存在.</p>
+</details>
+<hr />
+<h2 id="_6"><strong>题型</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="_7"><strong>裂项</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>求 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left[\frac{1}{1 \times 3}+\frac{1}{3 \times 5}+\cdots+\frac{1}{(2 n-1)(2 n+1)}\right]\)</span>.</p>
+<details class="答案"><summary>答案</summary><p><h3>【解】 因为</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; \frac{1}{1 \times 3}+\frac{1}{3 \times 5}+\cdots+\frac{1}{(2 n-1)(2 n+1)} \\
+=&amp; \frac{1}{2}\left[\left(1-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{5}\right)+\cdots+\left(\frac{1}{2 n-1}-\frac{1}{2 n+1}\right)\right] \\
+=&amp; \frac{1}{2}\left(1-\frac{1}{2 n+1}\right)
+\end{aligned}
+\]</div>
+<p>所以 <span class="arithmatex">\(\lim _{n \rightarrow \infty}\left[\frac{1}{1 \times 3}+\frac{1}{3 \times 5}+\cdots+\frac{1}{(2 n-1)(2 n+1)}\right]=\frac{1}{2}\)</span>.</p>
+</details>
+<hr />
+<h3 id="_8"><strong>合并项</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>求 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \cos \frac{x}{2} \cos \frac{x}{4} \cdots \cos \frac{x}{2^{n}}(x \neq 0)\)</span>.</p>
+<details class="答案"><summary>答案</summary><p><h3><span class="arithmatex">\(\begin{aligned} \lim _{n \rightarrow \infty} \cos \frac{x}{2} \cos \frac{x}{4} \cdots \cos \frac{x}{2^{n}} &amp;=\lim _{n \rightarrow \infty} \frac{2^{n} \cos \frac{x}{2} \cos \frac{x}{4} \cdots \cos \frac{x}{2^{n}} \sin \frac{x}{2^{n}}}{2^{n} \sin \frac{x}{2^{n}}} \\ &amp;=\lim _{n \rightarrow \infty} \frac{\sin x}{2^{n} \sin \frac{x}{2^{n}}}=\frac{\sin x}{x} \lim _{n \rightarrow \infty} \frac{\frac{x}{2^{n}}}{\sin \frac{x}{2^{n}}}=\frac{\sin x}{x} \end{aligned}\)</span></p>
+</details>
+<hr />
+<h3 id="_9"><strong>夹逼定理求解</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><mark class="critic"><strong>适用于：<span class="arithmatex">\(n\)</span> 项数列和的极限、三项中找最大</strong></mark></p>
+<div class="admonition 概念">
+<p class="admonition-title">概念</p>
+<p><h3>设数列 <span class="arithmatex">\(\left\{a_{n}\right\} 、\left\{b_{n}\right\} 、\left\{c_{n}\right\}\)</span> 满足:</p>
+<p>(1) <span class="arithmatex">\(a_{n} \leqslant b_{n} \leqslant c_{n}\)</span>;</p>
+<p>(2) <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}\)</span> 与 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} c_{n}\)</span> 存在且相等，</p>
+<p>则极限 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} b_{n}\)</span> 存在, </p>
+<p>且 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} b_{n}=\lim \limits_{n \rightarrow \infty} a_{n}=\lim \limits_{n \rightarrow \infty} c_{n}\)</span>.</p>
+</div>
+<h4 id="_10"><strong>例题</strong><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>【例 1】 求 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(\frac{1}{n^{2}+1}+\frac{2}{n^{2}+2}+\cdots+\frac{n}{n^{2}+n}\right)\)</span>.</p>
+<details class="答案"><summary>答案</summary><p><h3>因为 <span class="arithmatex">\(\frac{i}{n^{2}+n} \leqslant \frac{i}{n^{2}+i} \leqslant \frac{i}{n^{2}+1}(i=1,2, \cdots, n)\)</span>, </p>
+<p>所以 <span class="arithmatex">\(\frac{1}{2} \cdot \frac{n(n+1)}{n^{2}+n} \leqslant \frac{1}{n^{2}+1}+\frac{2}{n^{2}+2}+\cdots+\frac{n}{n^{2}+n} \leqslant \frac{1}{2} \cdot \frac{n(n+1)}{n^{2}+1}\)</span> </p>
+<p>且 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{1}{2} \cdot \frac{n(n+1)}{n^{2}+1}=\lim _{n \rightarrow \infty} \frac{1}{2} \cdot \frac{n(n+1)}{n^{2}+n}=\frac{1}{2}\)</span>, </p>
+<p>由夹逼定理得</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty}\left(\frac{1}{n^{2}+1}+\frac{2}{n^{2}+2}+\cdots+\frac{n}{n^{2}+n}\right)=\frac{1}{2}
+\]</div>
+</details>
+<p>【例 2】 设 <span class="arithmatex">\(a \geqslant 0, b \geqslant 0, c \geqslant 0\)</span>, 求 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(a^{n}+b^{n}+c^{n}\right)^{\frac{1}{n}}\)</span>.</p>
+<details class="答案"><summary>答案</summary><p><h3>不妨设 <span class="arithmatex">\(a\)</span> 为 <span class="arithmatex">\(a, b, c\)</span> 中的最大值,</p>
+<p>显然 <span class="arithmatex">\(a \leqslant\left(a^{n}+b^{n}+c^{n}\right)^{\frac{1}{n}} \leqslant 3^{\frac{1}{n}} a\)</span>, </p>
+<p>再由 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} 3^{\frac{1}{n}}=1\)</span>, </p>
+<p>根据夹逼定理得 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(a^{n}+b^{n}+c^{n}\right)^{\frac{1}{n}}=a\)</span>.</p>
+<p>一般地, <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(a^{n}+b^{n}+c^{n}\right)^{\frac{1}{n}}=\max \{a, b, c\}\)</span>.</p>
+</details>
+<p>【例 3】 求 <span class="arithmatex">\(f(x)=\lim \limits_{n \rightarrow \infty}\left[1+x^{n}+\left(\frac{x^{2}}{2}\right)^{n}\right]^{\frac{1}{n}}(x \geqslant 0)\)</span> 的表达式.</p>
+<details class="答案"><summary>答案</summary><p><h3>由例 2 得 <span class="arithmatex">\(f(x)=\max \left\{1, x, \frac{x^{2}}{2}\right\}= \begin{cases}1, &amp; 0 \leqslant x&lt;1, \\ x, &amp; 1 \leqslant x&lt;2, \\ \frac{x^{2}}{2}, &amp; x \geqslant 2 .\end{cases}\)</span></p>
+</details>
+<hr />
+<h3 id="lefta_nright"><strong>证明数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 极限存在</strong><a class="headerlink" href="#lefta_nright" title="Permanent link">&para;</a></h3>
+<p>证明其存在，需要证明其：
+* 单调性
+* 有界性</p>
+<p>单调性证明常见方法有：</p>
+<ul>
+<li>
+<p>重要不等式</p>
+<ul>
+<li>当 <span class="arithmatex">\(x&gt;0\)</span> 时, <span class="arithmatex">\(\ln (1+x)&lt;x\)</span>;</li>
+<li>当 <span class="arithmatex">\(x \geqslant 0\)</span> 时, <span class="arithmatex">\(\sin x \leqslant x\)</span>;</li>
+<li>当 <span class="arithmatex">\(x \neq 0\)</span> 时, <span class="arithmatex">\(e ^{x}&gt;1+x\)</span>.</li>
+</ul>
+</li>
+<li>
+<p>数学归纳法</p>
+</li>
+<li>
+<p>判断 <span class="arithmatex">\(a_{n+1}-a_{n}\)</span> 的正负得数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 的单调性 </p>
+</li>
+<li>
+<p>单调法
+    令 <span class="arithmatex">\(y=f(x)\)</span>, 若 <span class="arithmatex">\(f^{\prime}(x) \geqslant 0\)</span>, 则数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调, 其中</p>
+<p>(1) 若 <span class="arithmatex">\(a_{1} \leqslant a_{2}\)</span>, 则数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调递增;</p>
+<p>(2) 若 <span class="arithmatex">\(a_{1} \geqslant a_{2}\)</span>, 则数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调递减.</p>
+</li>
+<li>
+<p>中值定理</p>
+</li>
+</ul>
+<h4 id="_11">例题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>存在递推式型：【1】【2】</li>
+<li>无递推式型：</li>
+</ul>
+<p>【例 1】 设 <span class="arithmatex">\(0&lt;a_{1}&lt;\pi\)</span>, 又 <span class="arithmatex">\(a_{n+1}=\sin a_{n}\)</span>,</p>
+<p>(1) 证明: <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}\)</span> 存在,并求此极限;</p>
+<p>(2) 求 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(\frac{a_{n+1}}{a_{n}}\right)^{\frac{1}{a_{n}^{2}}}\)</span>.</p>
+<details class="答案"><summary>答案</summary><p><h3>【证明】（1）显然 <span class="arithmatex">\(a_{n}&gt;0(n=1,2, \cdots)\)</span> ；</p>
+<p>因为当 <span class="arithmatex">\(x&gt;0\)</span> 时, <span class="arithmatex">\(\sin x&lt;x\)</span>, 所以 <span class="arithmatex">\(a_{n+1}=\sin a_{n}&lt;a_{n}\)</span>, </p>
+<p>即 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调递减, 故 <span class="arithmatex">\(\lim _{n \rightarrow \infty} a_{n}\)</span> 存在. </p>
+<p>令 <span class="arithmatex">\(\lim _{n \rightarrow \infty} a_{n}=A, a_{n+1}=\sin a_{n}\)</span> 两边取极限得 <span class="arithmatex">\(A=\sin A\)</span>, </p>
+<p>解得 <span class="arithmatex">\(A=0\)</span>.</p>
+<p>(2) //因为字太小了调大了一些，但是手机可能就不大好看了</p>
+<p><h2><span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(\frac{a_{n+1}}{a_{n}}\right)^{\frac{1}{a_{n}^{2}}}\)</span><span class="arithmatex">\(\lim \limits_{n \rightarrow \infty}\left(\frac{\sin a_{n}}{a_{n}}\right)^{\frac{1}{a_{n}^{2}}} \stackrel{a_{n}=t}{=} \lim \limits_{t \rightarrow 0}\left(\frac{\sin t}{t}\right)^{\frac{1}{t^{2}}}\)</span><span class="arithmatex">\(=\lim \limits_{t \rightarrow 0}\left[\left(1+\frac{\sin t-t}{t}\right)^{\frac{1}{\sin -t}}\right]^{\frac{1}{t^{2}} \cdot \frac{\sin t-t}{t}}\)</span><span class="arithmatex">\(= e ^{\lim \limits_{t \rightarrow 0} \frac{\sin t-t}{t^{3}}}\)</span><span class="arithmatex">\(= e ^{\lim \limits_{t \rightarrow 0} \frac{\cos -1}{3 t^{2}}}= e ^{-\frac{1}{6}}\)</span></h></p>
+</details>
+<p>【例 2】 设 <span class="arithmatex">\(a_{1}=\sqrt{2}, a_{2}=\sqrt{2+\sqrt{2}}, a_{3}=\sqrt{2+\sqrt{2+\sqrt{2}}}, \cdots\)</span>, </p>
+<p>证明 <span class="arithmatex">\(: \lim _{n \rightarrow \infty} a_{n}\)</span> 存在,并求此极限. </p>
+<details class="答案"><summary>答案</summary><p><h3>【证明】 该数列的递推关系为 <span class="arithmatex">\(a_{n+1}=\sqrt{2+a_{n}}(n=1,2, \cdots)\)</span>, 显然数列 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调递增, <span class="arithmatex">\(a_{1}=\sqrt{2} \leqslant 2\)</span>.</p>
+<p>设 <span class="arithmatex">\(a_{k} \leqslant 2\)</span>,</p>
+<p>当 <span class="arithmatex">\(n=k+1\)</span> 时, <span class="arithmatex">\(a_{k+1}=\sqrt{2+a_{k}} \leqslant \sqrt{2+2}=2\)</span>,</p>
+<p>由数学归纳法, 对任意的正整数 <span class="arithmatex">\(n\)</span>, </p>
+<p>有 <span class="arithmatex">\(a_{n} \leqslant 2\)</span>, 故 <span class="arithmatex">\(\lim \limits_{n\rightarrow \infty}\)</span> 存在.</p>
+<p>令 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}=A\)</span>, 由 <span class="arithmatex">\(a_{n+1}=\sqrt{2+a_{n}}\)</span> 得 <span class="arithmatex">\(A=\sqrt{2+A}\)</span>, 解得 <span class="arithmatex">\(A=2\)</span>.</p>
+</details>
+<hr />
+<h2 id="_12">练习题<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="660-no12">660 No.12<a class="headerlink" href="#660-no12" title="Permanent link">&para;</a></h3>
+<p>数列极限 <span class="arithmatex">\(I=\lim \limits_{n \rightarrow \infty} n^{2}\left(\arctan \frac{2}{n}-\arctan \frac{2}{n+1}\right)=\)</span>______</p>
+<details class="答案"><summary>答案</summary><p><h3>【分析】 <mark class="critic">方法 1</mark> 这是 <span class="arithmatex">\(\infty \cdot 0\)</span> 型的数列极限,转化为求 <span class="arithmatex">\(\frac{0}{0}\)</span> 型的函数极限,然后用洛必达法则.
+<span class="arithmatex">\(\begin{aligned} I=&amp; \lim _{n \rightarrow \infty} \frac{\arctan \frac{2}{n}-\arctan \frac{2}{n\left(1+\frac{1}{n}\right)}}{\frac{1}{n^{2}}} \\=&amp; \lim _{x \rightarrow 0^{+}} \frac{\arctan 2 x-\arctan \frac{2 x}{1+x}}{x^{2}} \\ &amp;=\lim _{x \rightarrow 0^{+}} \frac{2}{1+4 x^{2}}-\frac{1}{1+\frac{4 x^{2}}{(1+x)^{2}} \cdot \frac{2(1+x)-2 x}{(1+x)^{2}}} \\=&amp; \lim _{x \rightarrow 0^{+}} \frac{(1+x)^{2}-1}{x\left(1+4 x^{2}\right)\left((1+x)^{2}+4 x^{2}\right)} \\=&amp; \lim _{x \rightarrow 0^{+}} \frac{2+x}{\left(1+4 x^{2}\right)\left((1+x)^{2}+4 x^{2}\right)}=2 \end{aligned}\)</span></p>
+<p><mark class="critic">方法 2</mark> 这是 <span class="arithmatex">\(\infty \cdot 0\)</span> 型极限,</p>
+<p>为简化计算设法寻求 <span class="arithmatex">\(\arctan \frac{2}{n}-\arctan \frac{2}{n+1}\)</span> 的等价无穷小, </p>
+<p>它是 <span class="arithmatex">\(f(x)=\arctan x\)</span> 的改变量 <span class="arithmatex">\(f\left(\frac{2}{n}\right)-f\left(\frac{2}{n+1}\right)\)</span>. </p>
+<p>由拉格朗日中值定理,它可改写成</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\arctan \frac{2}{n}-\arctan \frac{2}{n+1} &amp;=f\left(\frac{2}{n}\right)-f\left(\frac{2}{n+1}\right)=f^{\prime}(\xi)\left(\frac{2}{n}-\frac{2}{n+1}\right) \\
+&amp;=\frac{1}{1+\xi^{2}} \cdot \frac{2}{n(n+1)} \sim \frac{2}{n(n+1)} \quad(n \rightarrow \infty)
+\end{aligned}
+\]</div>
+<p>其中 <span class="arithmatex">\(\frac{2}{n+1}&lt;\xi&lt;\frac{2}{n}\)</span>, 当 <span class="arithmatex">\(n \rightarrow \infty\)</span> 时, <span class="arithmatex">\(\frac{1}{1+\xi^{2}} \rightarrow 1\)</span>.</p>
+<p>因此, <span class="arithmatex">\(I=\lim \limits_{n \rightarrow \infty} n^{2} \cdot \frac{2}{n(n+1)}=2\)</span>.</p>
+</details>
+<h3 id="660-no14">660 No.14<a class="headerlink" href="#660-no14" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \frac{\ln \left(1+x+\frac{f(x)}{x}\right)}{x}=3\)</span>, 则 <span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \frac{f(x)}{x^{2}}=\)</span></p>
+<details class="答案"><summary>答案</summary><p><h3>【分析】 由 <span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \frac{\ln \left(1+x+\frac{f(x)}{x}\right)}{x}=3\)</span></p>
+<p>当 <span class="arithmatex">\(x \rightarrow 0\)</span> 时, 分母为无穷小, 所以分子也为无穷小, </p>
+<p>进一步有 <span class="arithmatex">\(\lim \limits_{x \rightarrow 0}\left(x+\frac{f(x)}{x}\right)=0\)</span>. </p>
+<p>因此,当 <span class="arithmatex">\(x \rightarrow 0\)</span> 时
+<span class="arithmatex">\(\ln \left(1+x+\frac{f(x)}{x}\right) \sim x+\frac{f(x)}{x}\)</span>, </p>
+<p>所以(1) 可写为 <span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \frac{x+\frac{f(x)}{x}}{x}=3\)</span></p>
+<p>因此<span class="arithmatex">\(\lim \limits_{x \rightarrow 0} \frac{f(x)}{x^{2}}=2\)</span></p>
+</details>
+<h3 id="660-no130">660 No.130<a class="headerlink" href="#660-no130" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\quad I=\lim \limits_{x \rightarrow 0} \frac{\cos \left(x \mathrm{e}^{x}\right)-\mathrm{e}^{-\frac{x^{2}}{2} e^{2 x}}}{x^{4}}=\)</span>
+(A) 0 .
+(B) <span class="arithmatex">\(-\frac{1}{6}\)</span>
+(C) <span class="arithmatex">\(-\frac{1}{8}\)</span>
+(D) <span class="arithmatex">\(-\frac{1}{12}\)</span></p>
+<details class="答案"><summary>答案</summary><p><h3>
+[
+\begin{aligned}
+I &amp;=\lim <em>{x \rightarrow 0} \frac{\cos \left(x e ^{x}\right)- e ^{-\frac{1}{2}\left(x e <sup>{x}\right)</sup>{2}}}{\left(x e <sup>{x}\right)</sup>{4}} \cdot e ^{4 x} \
+使t=xe ^{x}，I&amp;={\lim </em>{t \rightarrow 0} \frac{\cos t- e ^{-\frac{1}{2} t<sup>{2}}}{t</sup>{4}} \cdot \lim <em>{x \rightarrow 0} e ^{4 x}} \
+&amp;=\lim </em>{t \rightarrow 0} \frac{\cos t- e ^{-\frac{1}{2} t<sup>{2}}}{t</sup>{4}}
+\end{aligned}
+]</p>
+<p>后面就不写了，常规题，用洛必达或者展开均可求解</p>
+<p>本题的重点在于利用<span class="arithmatex">\(e^{x}=1\)</span>化简未知量</p>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 函数极限" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              函数极限
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="Next: 连续、间断与导数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              连续、间断与导数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

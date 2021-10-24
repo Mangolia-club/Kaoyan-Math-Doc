@@ -1,0 +1,1377 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>行列式与矩阵 - 考研数学文档 Kmath</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="考研数学文档 Kmath" class="md-header__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            考研数学文档 Kmath
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              行列式与矩阵
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-tabs__link">
+        高等数学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        线性代数
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chap1.md" class="md-tabs__link">
+        概率论
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-tabs__link">
+      其他相关概念
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="考研数学文档 Kmath" class="md-nav__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    考研数学文档 Kmath
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        高等数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="高等数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          高等数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-nav__link">
+        函数极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        数列极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        连续、间断与导数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        中值定理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        积分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        微分方程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%BA%A7%E6%95%B0%E5%88%A4%E6%95%9B/" class="md-nav__link">
+        级数判敛
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        线性代数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="线性代数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          行列式与矩阵
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        行列式与矩阵
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    暂未完工
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determinant" class="md-nav__link">
+    行列式(Determinant)
+  </a>
+  
+    <nav class="md-nav" aria-label="行列式(Determinant)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    行列式的值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    |A|与可逆:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    逆序数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    行列式之和
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    范德蒙行列式
+  </a>
+  
+    <nav class="md-nav" aria-label="范德蒙行列式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    解行列式的一些技巧
+  </a>
+  
+    <nav class="md-nav" aria-label="解行列式的一些技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    完全展开
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    行列式按行 (列) 展开
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    行 (列) 相加得到 1
+  </a>
+  
+    <nav class="md-nav" aria-label="行 (列) 相加得到 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例如
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    【应用】
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    递推型
+  </a>
+  
+    <nav class="md-nav" aria-label="递推型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    一阶递推式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    二阶递推式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    拆项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    矩阵
+  </a>
+  
+    <nav class="md-nav" aria-label="矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    特殊矩阵的\(n\)次方
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊矩阵的\(n\)次方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    分块矩阵的转置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    分块矩阵的积
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-nav__link">
+        秩与向量
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        线性方程组
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-nav__link">
+        特征值与特征向量
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        概率论
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chap1.md" class="md-nav__link">
+        chap1
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其他相关概念
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    暂未完工
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determinant" class="md-nav__link">
+    行列式(Determinant)
+  </a>
+  
+    <nav class="md-nav" aria-label="行列式(Determinant)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    行列式的值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    |A|与可逆:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    逆序数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    行列式之和
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    范德蒙行列式
+  </a>
+  
+    <nav class="md-nav" aria-label="范德蒙行列式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    解行列式的一些技巧
+  </a>
+  
+    <nav class="md-nav" aria-label="解行列式的一些技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    完全展开
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    行列式按行 (列) 展开
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    行 (列) 相加得到 1
+  </a>
+  
+    <nav class="md-nav" aria-label="行 (列) 相加得到 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例如
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    【应用】
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    递推型
+  </a>
+  
+    <nav class="md-nav" aria-label="递推型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    一阶递推式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    二阶递推式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    拆项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    矩阵
+  </a>
+  
+    <nav class="md-nav" aria-label="矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    特殊矩阵的\(n\)次方
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊矩阵的\(n\)次方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    分块矩阵的转置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    分块矩阵的积
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/edit/master/docs/线性代数/行列式与矩阵.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">行列式与矩阵<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">暂未完工<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=488846&auto=0&height=66"></iframe>
+
+<blockquote>
+<p>Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.
+-Morpheus</p>
+<p>很遗憾, 矩阵是什么是说不清的。你必须得自己亲眼看看。
+—— 墨菲斯</p>
+</blockquote>
+<h2 id="_3">导图<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="https://app.bestzixue.com/diagram/knowledge_flowchart_la_det-compute.jpg" /></p>
+<hr />
+<h2 id="determinant">行列式(Determinant)<a class="headerlink" href="#determinant" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(n\)</span>阶行列式：
+<span class="arithmatex">\(D=\left|\begin{array}{llll}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1 n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2 n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n 1} &amp; a_{n 2} &amp; \cdots &amp; a_{n n}\end{array}\right|=|A|或detA或det(a_{ij})\)</span></p>
+<p>是一个<strong>数</strong></p>
+<p><span class="arithmatex">\(=\)</span>所有取自不同行不同列的元素的乘积的代数和</p>
+<h3 id="_4">行列式的值<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.bilibili.com/video/av6731067"><img alt="" src="https://s3.bmp.ovh/imgs/2021/10/5eb88306504f5941.png" /></a></p>
+<p>//表示行列式代表的矩阵的列向量（或者行向量也可以，但是一般都是用列向量代表各个向量，就是高中学的那个向量）所围成的面积（或者体积，看阶数：二阶就相当于是面积，三阶相当于是面积）</p>
+<hr />
+<h3 id="a">|A|与可逆:<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(|A| \neq 0 \Leftrightarrow A\)</span>  可逆;</p>
+<p><span class="arithmatex">\(|A|=0 \Leftrightarrow A\)</span>不可逆</p>
+<p>即  <span class="arithmatex">\(A\)</span>  的行列式不为 <span class="arithmatex">\(0 \Leftrightarrow A\)</span> 可逆。</p>
+<p>则有 <span class="arithmatex">\(|A|=0 \Leftrightarrow A\)</span> 不可逆。</p>
+<ul>
+<li>涉及秩与向量之的知识：不可逆即说明经过有限次线性变换之后有一行或一列可以全部化为0，所以秩肯定<span class="arithmatex">\(\le n\)</span>.（也意味着列向量一定线性相关）</li>
+<li>换句话说，<strong>可逆矩阵一定满秩</strong></li>
+</ul>
+<hr />
+<h3 id="_5">逆序数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\sum\limits_{i=1}^{n-1}n_{i}\)</span>之后比它小的数的个数</p>
+<hr />
+<h3 id="_6"><strong>行列式之和</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\left|\begin{array}{cc}a_{1}+b_{1} &amp; a_{2}+b_{2} \\ c_{1} &amp; c_{2}\end{array}\right|=\left|\begin{array}{cc}a_{1} &amp; a_{2} \\ c_{1} &amp; c_{2}\end{array}\right|+\left|\begin{array}{cc}b_{1} &amp; b_{2} \\ c_{1} &amp; c_{2}\end{array}\right|\)</span></p>
+<p>如果行列式某行(或列) 是两个元素之和，</p>
+<p>则可把行列式拆成两个行列式之和。</p>
+<p><span class="arithmatex">\(\left|\begin{array}{ccc}a_{1}+b_{1} &amp; a_{2}+b_{2} &amp; a_{3}+b_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|=\left|\begin{array}{lll}a_{1} &amp; a_{2} &amp; a_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|+\left|\begin{array}{lll}b_{1} &amp; b_{2} &amp; b_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|\)</span></p>
+<hr />
+<h3 id="_7"><strong>范德蒙行列式</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\left|\begin{array}{cccc}
+1 &amp; 1 &amp; \cdots &amp; 1 \\
+x_{1} &amp; x_{2} &amp; \cdots &amp; x_{n} \\
+x_{1}^{2} &amp; x_{2}^{2} &amp; \cdots &amp; x_{n}^{2} \\
+\vdots &amp; \vdots &amp; &amp; \vdots \\
+x_{1}^{n-1} &amp; x_{2}^{n-1} &amp; \cdots &amp; x_{n}^{n-1}
+\end{array}\right|=\prod_{1 \leqslant j&lt;i \leqslant n}\left(x_{i}-x_{j}\right)
+\]</div>
+<h4 id="_8">例题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<blockquote>
+<div class="arithmatex">\[
+\left|\begin{array}{ccc}
+1 &amp; 1 &amp; 1 \\
+5 &amp; 4 &amp; 3 \\
+5^{2} &amp; 4^{2} &amp; 3^{2}
+\end{array}\right|=
+\]</div>
+</blockquote>
+<details class="答案"><summary>答案</summary><h3>
+<div class="arithmatex">\[
+(4-5)(3-5)(3-4)=-1 \cdot(-2) \cdot(-1)=-2
+\]</div>
+</details>
+<hr />
+<h3 id="_9"><strong>解行列式的一些技巧</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">完全展开<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>用于小于等于三阶的行列式</p>
+<p><span class="arithmatex">\(\left|\begin{array}{ll}a_{11} &amp;a_{12} &amp; a_{13} \\ a_{21} &amp;a_{22} &amp; a_{23} \\ a_{31}&amp; a_{32} &amp; a_{33}\end{array}\right| = a_{11} a_{22} a_{33}+a_{12} a_{23} a_{31}+a_{13} a_{21} a_{32}-a_{13} a_{22} a_{31}-a_{12} a_{21} a_{33}-a_{11} a_{23} a_{32}\\\)</span></p>
+<p>即主对角线元素和-副对角线元素和</p>
+<p>举例：</p>
+<p><span class="arithmatex">\(\left|\begin{array}{llllll}a_{11} &amp; \color{Red}a_{12} &amp; a_{13} &amp; a_{11} &amp; a_{12} &amp; a_{13} \\ a_{21} &amp; a_{22} &amp; \color{Red}a_{23} &amp; a_{21} &amp; a_{22} &amp; a_{23} \\ a_{31} &amp; a_{32} &amp; a_{33} &amp; \color{Red}a_{31} &amp; a_{32} &amp; a_{33}\end{array}\right|\)</span> </p>
+<p><span class="arithmatex">\(\left|\begin{array}{llllll}a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{11} &amp; \color{Red}a_{12} &amp; a_{13} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; \color{Red}a_{21} &amp; a_{22} &amp; a_{23} \\ a_{31} &amp; a_{32} &amp; \color{Red}a_{33} &amp; a_{31} &amp; a_{32} &amp; a_{33}\end{array}\right|\)</span></p>
+<hr />
+<h4 id="_11">行列式按行 (列) 展开<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>用于：
+* 一行中仅有个别非零项（可以先通过线性变换造几个）</p>
+<p><span class="arithmatex">\(|\mathbf{A}|=\sum\limits_{k=1}^{n} a_{i k} A_{i k}=\sum\limits_{k=1}^{n} a_{k j} A_{k j}\)</span> . </p>
+<p><span class="arithmatex">\(|\mathbf{A}|\)</span>  按第  i  行展开, 得到  <span class="arithmatex">\(|\mathbf{A}|=\sum\limits_{k=1}^{n} a_{i k} A_{i k}\)</span> , </p>
+<p>按第  j  列展开, 得到  <span class="arithmatex">\(|\mathbf{A}|=\sum\limits_{k=1}^{n} a_{k j} A_{k j}\)</span> .</p>
+<p>从原行列式中划去  <span class="arithmatex">\(a_{i j}\)</span>  所在的第  i  行、第  j  列的元素， 得到余子式  <span class="arithmatex">\(M_{i j}\)</span> ; </p>
+<p>代数余子式  <span class="arithmatex">\(A_{i j}=(-1)^{i+j} M_{i j}\)</span>  </p>
+<p>例如:</p>
+<p><span class="arithmatex">\(|A|=\left|\begin{array}{lll}1 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3\end{array}\right|\)</span>  将  |A|  按第 2 行展开,得:</p>
+<p><span class="arithmatex">\(|A|=0 \cdot(-1)^{2+1}\left|\begin{array}{ll}0 &amp; 0 \\ 0 &amp; 3\end{array}\right|+2 \cdot(-1)^{2+2}\left|\begin{array}{ll}1 &amp; 0 \\ 0 &amp; 3\end{array}\right|+0 \cdot(-1)^{2+3}\left|\begin{array}{ll}1 &amp; 0 \\ 0 &amp; 0\end{array}\right|=2 \cdot 3=6\)</span></p>
+<p><span class="arithmatex">\((-1)^{2+1}\)</span>  中 2 指第 2 行, 1 指第 1 列。  </p>
+<p><span class="arithmatex">\(\left|\begin{array}{ll}0 &amp; 0 \\ 0 &amp; 3\end{array}\right|\)</span>  指将  <span class="arithmatex">\(\left|\begin{array}{lll}\cancel 1 &amp; 0 &amp; 0 \\\cancel 0&amp;\cancel 2&amp; \cancel 0 \\ \cancel 0 &amp; 0 &amp; 3\end{array}\right|\)</span>  中的第 2 行，第 1 列划掉后, </p>
+<p>得到的新的行列式。其余同理。</p>
+<hr />
+<h4 id="1">行 (列) 相加得到 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<p>几行 (列) 相加后值相同, 提取公因子, 则这一行 (列) 都为 1</p>
+<p>观察矩阵, 如果其中几行 (列) 或所有行 (列) 的倍数相加后, 每个元素相等, </p>
+<p>则提取公因子后这一行 (列) 都为 因为行 (列) 倍加不改变行列式的值, </p>
+<p>生成全为 1 的行 (列) 经常用来简化行列式的计算。</p>
+<h5 id="_12">例如<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h5>
+<p>将 <span class="arithmatex">\(\left|\begin{array}{lll}0 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0\end{array}\right|\)</span> 的第 2 行和第 3 行都加到第 1 行, 则第一行的元素都为 2 , 行列式的值不变。 提出公因子 2 , 有:</p>
+<p><span class="arithmatex">\(\left|\begin{array}{lll}0 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0\end{array}\right|=\left|\begin{array}{lll}2 &amp; 2 &amp; 2 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0\end{array}\right|=2\left|\begin{array}{lll}1 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0\end{array}\right|\)</span></p>
+<h5 id="_13">【应用】<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h5>
+<p>全 1 的行适合用来倍加到其它行, 来产生 0 . 如上例, 第 2 行和第 3 行分别比第 1 行少一个 1 , 则减去第 1 行, 产生上三角形行列式:</p>
+<p><span class="arithmatex">\(2\left|\begin{array}{lll}1 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0\end{array}\right|=2\left|\begin{array}{ccc}1 &amp; 1 &amp; 1 \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; -1\end{array}\right|=2 \cdot 1 \cdot(-1) \cdot(-1)=2\)</span></p>
+<hr />
+<h4 id="_14"><h2>递推型<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<h5 id="_15">一阶递推式<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
+<ul>
+<li>写成 <span class="arithmatex">\(x_{n}-c=a^{n-1}\left(x_{1}-c\right)\)</span></li>
+</ul>
+<h5 id="_16">二阶递推式<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<p>二阶递推式： <span class="arithmatex">\(D_{n}=a D_{n-1}+b D_{n-2}\)</span>, 用特征方程求解。</p>
+<ol>
+<li>
+<p>解特征方程, <span class="arithmatex">\(x^{2}-a x-b=0\)</span>, 令 <span class="arithmatex">\(x_{1}\)</span> 与 <span class="arithmatex">\(x_{2}\)</span> 为方程的根。</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(x_{1} \neq x_{2}\)</span>, 则递推式的通解为 <span class="arithmatex">\(D_{n}=c x_{1}^{n}+d x_{2}^{n}\)</span>.</p>
+</li>
+</ol>
+<p>若 <span class="arithmatex">\(x_{1}=x_{2}\)</span>, 则递推式的通解为 <span class="arithmatex">\(D_{n}=(c n+d) x_{1}^{n}\)</span>.</p>
+<p>代入 <span class="arithmatex">\(n=1,2\)</span> 时 <span class="arithmatex">\(D_{n}\)</span> 的值求出常数 <span class="arithmatex">\(c, d\)</span>.</p>
+<h5 id="_17"><h3>例题<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
+<p>先来一道比较基本的，主要考察概念。</p>
+<blockquote>
+<p>已知 <span class="arithmatex">\(x_{n}=3 x_{n-1}-4, x_{1}=5\)</span>, 则 <span class="arithmatex">\(x_{20}=\)</span></p>
+<p>A. <span class="arithmatex">\(3^{19}+1\)</span></p>
+<p>B. <span class="arithmatex">\(3^{19}+2\)</span></p>
+<p>C. <span class="arithmatex">\(3^{20}+1 \mid\)</span></p>
+<p>D. <span class="arithmatex">\(3^{20}+2\)</span></p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>将等式写成 <span class="arithmatex">\(x_{n}-c=3\left(x_{n-1}-c\right)\)</span> 的形式, 求 <span class="arithmatex">\(c\)</span>.</p>
+<p>化简得到 <span class="arithmatex">\(x_{n}=3 x_{n-1}-3 c+c=3 x_{n-1}-2 c\)</span>.</p>
+<p>由于题设给定 <span class="arithmatex">\(x_{n}=3 x_{n-1}-4\)</span>, 比较系数得到 <span class="arithmatex">\(c=2\)</span>.</p>
+<p>所以 <span class="arithmatex">\(x_{n}-2=3\left(x_{n-1}-2\right)=3^{2}\left(x_{n-2}-2\right)=\cdots=3^{n-1}\left(x_{1}-2\right)\)</span>. </p>
+<p>代入 <span class="arithmatex">\(x_{1}=5\)</span>, 则 <span class="arithmatex">\(x_{n}-2=3^{n-1} \cdot 3=3^{n}\)</span>, </p>
+<p>即 <span class="arithmatex">\(x_{n}=3^{n}+2\)</span>. </p>
+<p>则 <span class="arithmatex">\(x_{20}=3^{20}+2\)</span> 选 <span class="arithmatex">\(D\)</span>.</p>
+</details>
+<p>再来一道考试中可能会考的题型：棒棒行列式</p>
+<blockquote>
+<p>已知 <span class="arithmatex">\(n\)</span> 阶矩阵
+<span class="arithmatex">\(A=\left[\begin{array}{llllll}3 &amp; 1 &amp; &amp; &amp; &amp; \\ 2 &amp; 3 &amp; 1 &amp; &amp; &amp; \\ &amp; 2 &amp; 3 &amp; 1 &amp; &amp; \\ &amp; &amp; \ddots &amp; \ddots &amp; \ddots &amp; \\ &amp; &amp; &amp; 2 &amp; 3 &amp; 1 \\ &amp; &amp; &amp; &amp; 2 &amp; 3\end{array}\right]\)</span> 则 <span class="arithmatex">\(|A|=\)</span></p>
+<p>A. <span class="arithmatex">\(4 n-1\)</span></p>
+<p>B. <span class="arithmatex">\(2^{n+1}-1\)</span></p>
+<p>C. <span class="arithmatex">\(2^{n}+1\)</span></p>
+<p>D. <span class="arithmatex">\(5^{n}-2 \cdot 3^{n-1}\)</span></p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>【分析】</p>
+<p>若 <span class="arithmatex">\(n\)</span> 阶行列式结构上有规律, 用递推法。</p>
+<p>令 <span class="arithmatex">\(D_{n}=n\)</span> 阶行列式, 按一行或一列展开, 得到递推式。</p>
+<p>这题解法不唯一，比如也可以用化为上三角解决。</p>
+<p>【 解析 】</p>
+<ol>
+<li>展开</li>
+</ol>
+<p>按第 1 行展开, 有</p>
+<p><span class="arithmatex">\(D_{n}=3 \cdot(-1)^{1+1}\left[\begin{array}{lllll}3 &amp; 1 &amp; &amp; &amp; \\ 2 &amp; 3 &amp; 1 &amp; &amp; \\ &amp; \ddots &amp; \ddots &amp; \ddots &amp; \\ &amp; &amp; 2 &amp; 3 &amp; 1 \\ &amp; &amp; &amp; 2 &amp; 3\end{array}\right]_{n-1}+1 \cdot(-1)^{1+2}\left[\begin{array}{llllll}2 &amp; 1 &amp; &amp; &amp; &amp; \\ &amp; 3 &amp; 1 &amp; &amp; &amp; \\ &amp; 2 &amp; 3 &amp; 1 &amp; &amp; \\ &amp; &amp; \ddots &amp; \ddots &amp; \ddots &amp; \\ &amp; &amp; &amp; 2 &amp; 3 &amp; 1 \\ &amp; &amp; &amp; &amp; 2 &amp; 3\end{array}\right]_{n-1}\)</span></p>
+<p>第二项按第1列展开</p>
+<p>原式<span class="arithmatex">\(=3 D_{n-1}-2 \cdot(-1)^{1+1}\left[\begin{array}{lllll}3 &amp; 1 &amp; &amp; &amp; \\ 2 &amp; 3 &amp; 1 &amp; &amp; \\ &amp; \ddots &amp; \ddots &amp; \ddots &amp; \\ &amp; &amp; 2 &amp; 3 &amp; 1 \\ &amp; &amp; &amp; 2 &amp; 3\end{array}\right]_{n-2}\)</span></p>
+<p><span class="arithmatex">\(=3 D_{n-1}-2 D_{n-2}\)</span> <span class="arithmatex">\(\Rightarrow\)</span> 二阶递归式。</p>
+<ol>
+<li>解二阶递推式:</li>
+</ol>
+<p><span class="arithmatex">\(D_{n}=3 D_{n-1}-2 D_{n-2}\)</span>, 用特征方程求解。</p>
+<p><span class="arithmatex">\(x^{2}-3 x+2=0 \Rightarrow(x-1)(x-2)=0 \Rightarrow x_{1}=1, x_{2}=2\)</span></p>
+<p>则递推式的通解为 <span class="arithmatex">\(D_{n}=c \cdot 1^{n}+d \cdot 2^{n} .\)</span></p>
+<p>代入 <span class="arithmatex">\(n=1\)</span>, 有 <span class="arithmatex">\(D_{1}=c+2 d=|3|=3\)</span>.</p>
+<p>代入 <span class="arithmatex">\(n=2\)</span>, 有 <span class="arithmatex">\(D_{2}=c+4 d=\left|\begin{array}{ll}3 &amp; 1 \\ 2 &amp; 3\end{array}\right|=7\)</span></p>
+<p>综上 <span class="arithmatex">\(c+2 d=3, c+4 d=7\)</span>, 解得 <span class="arithmatex">\(c=-1, d=2\)</span> </p>
+<p>则 <span class="arithmatex">\(D_{n}=(-1) \cdot 1^{n}+2 \cdot 2^{n}=2^{n+1}-1 .\)</span> 选 <span class="arithmatex">\(B\)</span>.</p>
+<p>看会了吧？会了的话自己尝试一下用化为上三角求解吧<sub>能做到一题还是很有成就感的</sub></p>
+</details>
+<hr />
+<h4 id="_18">拆项<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<p>用于：
+* 某一行的元素是两种不同规律的加和，则可以分开分别计算。</p>
+<p><span class="arithmatex">\(\left|\begin{array}{cc}a_{1}+b_{1} &amp; a_{2}+b_{2} \\ c_{1} &amp; c_{2}\end{array}\right|=\left|\begin{array}{cc}a_{1} &amp; a_{2} \\ c_{1} &amp; c_{2}\end{array}\right|+\left|\begin{array}{cc}b_{1} &amp; b_{2} \\ c_{1} &amp; c_{2}\end{array}\right|\)</span></p>
+<p>如果行列式某行(或列) 是两个元素之和，</p>
+<p>则可把行列式拆成两个行列式之和。</p>
+<p>例如一个三阶行列式：</p>
+<p><span class="arithmatex">\(\left|\begin{array}{ccc}a_{1}+b_{1} &amp; a_{2}+b_{2} &amp; a_{3}+b_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|=\left|\begin{array}{lll}a_{1} &amp; a_{2} &amp; a_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|+\left|\begin{array}{lll}b_{1} &amp; b_{2} &amp; b_{3} \\ c_{1} &amp; c_{2} &amp; c_{3} \\ d_{1} &amp; d_{2} &amp; d_{3}\end{array}\right|\)</span></p>
+<hr />
+<h2 id="_19">矩阵<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="n">特殊矩阵的<span class="arithmatex">\(n\)</span>次方<a class="headerlink" href="#n" title="Permanent link">&para;</a></h3>
+<p>若秩 <span class="arithmatex">\(r(\boldsymbol{A})=1\)</span>, 则 <span class="arithmatex">\(\boldsymbol{A}\)</span> 可分解为一个列向量与一个行向量的 乘积, 有 <span class="arithmatex">\(\boldsymbol{A}^{2}=l \boldsymbol{A}\)</span> 之规律,</p>
+<p>从而 <span class="arithmatex">\(\boldsymbol{A}^{n}=l^{n-1} \boldsymbol{A}\)</span>.</p>
+<p><span class="arithmatex">\(A =\left[\begin{array}{lll}a_{1} b_{1} &amp; a_{1} b_{2} &amp; a_{1} b_{3} \\ a_{2} b_{1} &amp; a_{2} b_{2} &amp; a_{2} b_{3} \\ a_{3} b_{1} &amp; a_{3} b_{2} &amp; a_{3} b_{3}\end{array}\right]=\left[\begin{array}{l}a_{1} \\ a_{2} \\ a_{3}\end{array}\right]\left[b_{1}, b_{2}, b_{3}\right]= \alpha \beta ^{ T }\)</span></p>
+<p>那么<span class="arithmatex">\(\quad \boldsymbol{A}^{2}=\left(\boldsymbol{\alpha} \boldsymbol{\beta}^{\mathrm{T}}\right)\left(\boldsymbol{\alpha} \boldsymbol{\beta}^{\mathrm{T}}\right)=\boldsymbol{\alpha}\left(\boldsymbol{\beta}^{\mathrm{\top}} \boldsymbol{\alpha}\right) \boldsymbol{\beta}^{\mathrm{T}}=l\boldsymbol{\alpha} \boldsymbol{\beta}^{\mathrm{T}}=l\mathrm{A}\)</span></p>
+<p>其中<span class="arithmatex">\(\quad l=\boldsymbol{\beta}^{\top} \boldsymbol{\alpha}=\boldsymbol{a}^{\mathrm{\top}} \boldsymbol{\beta}=a_{1} b_{1}+a_{z} b_{2}+a_{3} b_{3}=\sum a_{ii}\)</span></p>
+<h4 id="_20">例题<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<p>已知 <span class="arithmatex">\(A =\left[\begin{array}{ccc}2 &amp; -1 &amp; 3 \\ 4 &amp; -2 &amp; 6 \\ -2 &amp; 1 &amp; -3\end{array}\right]\)</span>, 则 <span class="arithmatex">\(A ^{10}=\)</span>___</p>
+<details class="答案"><summary>答案</summary><p><h3><span class="arithmatex">\(-3^{9} A\)</span></p>
+<p>【分析】 由 <span class="arithmatex">\(r( A )=1\)</span>, 有 <span class="arithmatex">\(A ^{2}=l A\)</span>, </p>
+<p>其中 <span class="arithmatex">\(l=\sum a_{i i}\)</span>, 则 <span class="arithmatex">\(A ^{n}=l^{n-1} A\)</span>. </p>
+<p>现 <span class="arithmatex">\(l=2+(-2)+(-3)=-3\)</span>, 所以 <span class="arithmatex">\(A ^{10}=-3^{9} A\)</span>.</p>
+</details>
+<h3 id="_21">分块矩阵的转置<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\left[\begin{array}{ll}A &amp; B \\ C &amp; D\end{array}\right]^{\top}=\left[\begin{array}{ll}A^{\top} &amp; C^{\top} \\ B^{\top} &amp; D^{\top}\end{array}\right]\)</span></p>
+<ul>
+<li>注意不单块与块之间要转置, 每块也要转置。</li>
+</ul>
+<hr />
+<h3 id="_22">分块矩阵的积<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\left[\begin{array}{ll}A &amp; B \\ C &amp; D\end{array}\right]\left[\begin{array}{cc}X &amp; Y \\ Z &amp; W\end{array}\right]=\left[\begin{array}{ll}A X+B Z &amp; A Y+B W \\ C X+D Z &amp; C Y+D W\end{array}\right]\)</span></p>
+<p>要保证相对应子块的运算能够合理进行。例如：</p>
+<p><span class="arithmatex">\(\left[\begin{array}{ll}
+A &amp; B \\
+C &amp; D
+\end{array}\right]\left[\begin{array}{ll}
+X &amp; Y \\
+Z &amp; W
+\end{array}\right]=\left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; \vdots &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; \vdots &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; \vdots &amp; 1 \\
+\ldots &amp; \ldots &amp; \cdots &amp; \ldots &amp; \ldots \\
+0 &amp; 0 &amp; 1 &amp; \vdots &amp; 2
+\end{array}\right]\left[\begin{array}{ccccc}
+1 &amp; 2 &amp; 3 &amp; \vdots &amp; 0 \\
+4 &amp; 5 &amp; 6 &amp; \vdots &amp; 1 \\
+7 &amp; 8 &amp; 9 &amp; \vdots &amp; 1 \\
+\cdots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots \\
+2 &amp; 2 &amp; 2 &amp; \vdots &amp; 5
+\end{array}\right]\)</span>
+则 <span class="arithmatex">\(A X+B Z=\left[\begin{array}{lll}1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{array}\right]\left[\begin{array}{lll}1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9\end{array}\right]+\left[\begin{array}{l}1 \\ 1 \\ 1\end{array}\right]\left[\begin{array}{lll}2 &amp; 2 &amp; 2\end{array}\right]=\left[\begin{array}{lll}1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9\end{array}\right]+\left[\begin{array}{lll}2 &amp; 2 &amp; 2 \\ 2 &amp; 2 &amp; 2 \\ 2 &amp; 2 &amp; 2\end{array}\right]=\left[\begin{array}{ccc}3 &amp; 4 &amp; 5 \\ 6 &amp; 7 &amp; 8 \\ 9 &amp; 10 &amp; 11\end{array}\right]\)</span> <span class="arithmatex">\(C X+D Z=[0,0,1]\left[\begin{array}{lll}1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9\end{array}\right]+2\left[\begin{array}{lll}2 &amp; 2 &amp; 2\end{array}\right]=\left[\begin{array}{lll}7 &amp; 8 &amp; 9\end{array}\right]+\left[\begin{array}{lll}4 &amp; 4 &amp; 4\end{array}\right]=\left[\begin{array}{lll}11 &amp; 12 &amp; 13\end{array}\right]\)</span>
+以此类推。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%BA%A7%E6%95%B0%E5%88%A4%E6%95%9B/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 级数判敛" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              级数判敛
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-footer__link md-footer__link--next" aria-label="Next: 秩与向量" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              秩与向量
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

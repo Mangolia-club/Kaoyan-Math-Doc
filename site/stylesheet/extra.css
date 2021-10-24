@@ -1,0 +1,45 @@
+:root {
+    /* MarkDown相关属性
+    ============================================================================= */
+    /* 表 */
+    --table-border-color                : #cecece;
+    --table-border-width                : 1px;
+
+    --table-head-background             : #E6E6FA;
+    --table-head-border-color           : var(--table-border-color);
+    --table-head-border-width           : var(--table-border-width);
+    --table-head-font-weight            : bold;
+
+    --table-body-border-color           : var(--table-border-color);
+    --table-body-border-width           : var(--table-border-width);
+
+    --table-row-even-background         : #ffffff;/* 偶数行背景色 */
+    --table-row-odd-background          : #f7f7f7;/* 奇数行背景色 */
+
+    --table-cell-border-color           : var(--table-border-color);
+    --table-cell-border-width           : var(--table-border-width);
+    --table-cell-padding                : 0.75em 2em;
+    
+    
+    /* 一键复制代码插件
+    ============================================================================= */
+    --copycode-background               : #888888;
+    --copycode-color                    : #ffffff;
+
+    /* 侧边栏
+    ============================================================================= */
+    /* 侧边栏收缩按钮 */
+    --sidebar-toggle-background                   : #0b87daad;
+    --sidebar-toggle-border-color                 : #e3e3e3;
+    --sidebar-toggle-border-radius                : 0 2px 2px 0;
+    --sidebar-toggle-border-style                 : solid;
+    --sidebar-toggle-border-width                 : 0;
+    --sidebar-toggle-height                       : 36px;
+    --sidebar-toggle-icon-color                   : #ffffff;
+    --sidebar-toggle-icon-height                  : 10px;
+    --sidebar-toggle-icon-stroke-width            : 1px;
+    --sidebar-toggle-icon-width                   : 16px;
+    --sidebar-toggle-offset-left                  : 0;
+    --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
+    --sidebar-toggle-width                        : 36px;
+}

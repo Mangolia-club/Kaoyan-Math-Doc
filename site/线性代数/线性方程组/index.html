@@ -1,0 +1,1467 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>线性方程组 - 考研数学文档 Kmath</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="考研数学文档 Kmath" class="md-header__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            考研数学文档 Kmath
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              线性方程组
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-tabs__link">
+        高等数学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-tabs__link md-tabs__link--active">
+        线性代数
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chap1.md" class="md-tabs__link">
+        概率论
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-tabs__link">
+      其他相关概念
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="考研数学文档 Kmath" class="md-nav__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    考研数学文档 Kmath
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        高等数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="高等数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          高等数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-nav__link">
+        函数极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        数列极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        连续、间断与导数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        中值定理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        积分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        微分方程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%BA%A7%E6%95%B0%E5%88%A4%E6%95%9B/" class="md-nav__link">
+        级数判敛
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        线性代数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="线性代数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        行列式与矩阵
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-nav__link">
+        秩与向量
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          线性方程组
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        线性方程组
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    导图
+  </a>
+  
+    <nav class="md-nav" aria-label="导图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    独立、自由未知量
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    非齐次线性方程
+  </a>
+  
+    <nav class="md-nav" aria-label="非齐次线性方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    解的判定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    克拉默法则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{b}\) 解的性质
+  </a>
+  
+    <nav class="md-nav" aria-label="\(A \mathbf{x}=\mathbf{b}\) 解的性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    齐次线性方程
+  </a>
+  
+    <nav class="md-nav" aria-label="齐次线性方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    线性无关解的个数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    克拉默法则
+  </a>
+  
+    <nav class="md-nav" aria-label="克拉默法则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{0}\) 的基础解系
+  </a>
+  
+    <nav class="md-nav" aria-label="\(A \mathbf{x}=\mathbf{0}\) 的基础解系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0_1" class="md-nav__link">
+    求 \(A \mathbf{x}=\mathbf{0}\) 的基础解系：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    通解
+  </a>
+  
+    <nav class="md-nav" aria-label="通解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    求通解
+  </a>
+  
+    <nav class="md-nav" aria-label="求通解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb_1" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{b}\) 有特解求通解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    已知两个通解，求公共解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    已知通解求系数矩阵\(A\)
+  </a>
+  
+    <nav class="md-nav" aria-label="已知通解求系数矩阵\(A\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0_2" class="md-nav__link">
+    齐次方程组\(A \mathbf{x}=\mathbf{0}\)：
+  </a>
+  
+    <nav class="md-nav" aria-label="齐次方程组\(A \mathbf{x}=\mathbf{0}\)：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    已知通解求原齐次线性方程组
+  </a>
+  
+    <nav class="md-nav" aria-label="已知通解求原齐次线性方程组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb_2" class="md-nav__link">
+    非齐次方程组\(A \mathbf{x}=\mathbf{b}\)：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    同解
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-nav__link">
+        特征值与特征向量
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        概率论
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chap1.md" class="md-nav__link">
+        chap1
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其他相关概念
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    导图
+  </a>
+  
+    <nav class="md-nav" aria-label="导图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    独立、自由未知量
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    非齐次线性方程
+  </a>
+  
+    <nav class="md-nav" aria-label="非齐次线性方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    解的判定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    克拉默法则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{b}\) 解的性质
+  </a>
+  
+    <nav class="md-nav" aria-label="\(A \mathbf{x}=\mathbf{b}\) 解的性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    齐次线性方程
+  </a>
+  
+    <nav class="md-nav" aria-label="齐次线性方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    线性无关解的个数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    克拉默法则
+  </a>
+  
+    <nav class="md-nav" aria-label="克拉默法则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{0}\) 的基础解系
+  </a>
+  
+    <nav class="md-nav" aria-label="\(A \mathbf{x}=\mathbf{0}\) 的基础解系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0_1" class="md-nav__link">
+    求 \(A \mathbf{x}=\mathbf{0}\) 的基础解系：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    通解
+  </a>
+  
+    <nav class="md-nav" aria-label="通解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    求通解
+  </a>
+  
+    <nav class="md-nav" aria-label="求通解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb_1" class="md-nav__link">
+    \(A \mathbf{x}=\mathbf{b}\) 有特解求通解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    已知两个通解，求公共解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    已知通解求系数矩阵\(A\)
+  </a>
+  
+    <nav class="md-nav" aria-label="已知通解求系数矩阵\(A\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbf0_2" class="md-nav__link">
+    齐次方程组\(A \mathbf{x}=\mathbf{0}\)：
+  </a>
+  
+    <nav class="md-nav" aria-label="齐次方程组\(A \mathbf{x}=\mathbf{0}\)：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    已知通解求原齐次线性方程组
+  </a>
+  
+    <nav class="md-nav" aria-label="已知通解求原齐次线性方程组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-mathbfxmathbfb_2" class="md-nav__link">
+    非齐次方程组\(A \mathbf{x}=\mathbf{b}\)：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    同解
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/edit/master/docs/线性代数/线性方程组.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1"><strong>线性方程组</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="12" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1331712399&auto=0&height=66"></iframe>
+<blockquote>
+<p>“The art of doing mathematics is finding that special case that contains all the germs of generality.”
+——David Hilbert</p>
+<p>“数学之道在于找出一个这样的特例，它包含普遍原则的全部萌芽。”
+——大卫·希尔伯特</p>
+</blockquote>
+<hr />
+<h2 id="_2"><strong>导图</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img alt="导图" src="https://app.bestzixue.com/diagram/knowledge_flowchart_la_linear-eqn.jpg" /></p>
+<hr />
+<h3 id="_3"><strong>独立、自由未知量</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>独立末知量</strong>：（也称主变量）<span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span>, 其中 <span class="arithmatex">\(B\)</span> 为阶梯矩阵。选择非零行中首个非零元素所在的列。（并不用归一）</li>
+</ul>
+<p><span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span>, 其中 <span class="arithmatex">\(B\)</span> 为阶梯矩阵。</p>
+<p><strong>若 <span class="arithmatex">\(B\)</span> 有 <span class="arithmatex">\(r\)</span> 行不为 0 , 则有 <span class="arithmatex">\(r\)</span> 个独立末知量, <span class="arithmatex">\(n-r\)</span> 个自由未知量</strong></p>
+<p>例如：</p>
+<p><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right] \mathbf{x}=\mathbf{0}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{x}=\left(x_{1}, x_{2}, x_{3}, x_{4}\right)^{\top}\)</span> 为 4 维向量。</p>
+<p>选择非零行中首个非零元素所在的列 为独立末知量，</p>
+<p><span class="arithmatex">\(B=\left[\begin{array}{llll}1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></p>
+<p>分别位于第 1 列和第 3 列,</p>
+<p>则令 <span class="arithmatex">\(x_{1}, x_{3}\)</span> 为独立未知量（对应阶梯形矩阵 <span class="arithmatex">\(B\)</span> 的非零行中首个非零元素所在的列)</p>
+<p>而令 <span class="arithmatex">\(x_{2}, x_{4}\)</span> 为自由未知量。</p>
+<hr />
+<h2 id="_4"><strong>非齐次线性方程</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5"><strong>解的判定</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\begin{cases}无解\Leftrightarrow r(A)+1=r(A\mid \mathbf{b})
+ \\唯一解\Leftrightarrow r(A)=r(A \mid \mathbf{b})=n
+ \\无穷解 \Leftrightarrow r(A)=r(A \mid \mathbf{b})&lt;n
+\end{cases}\)</span></p>
+<hr />
+<h3 id="_6"><strong><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gabriel_Cramer.jpg/220px-Gabriel_Cramer.jpg">克拉默</a>法则</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>点击标题超链接有一张克拉默靓照
+非齐次方程组: <span class="arithmatex">\(A_{n \times n} \mathbf{x}=\mathbf{b}\)</span>,</p>
+</blockquote>
+<p>有 <span class="arithmatex">\(|A| \neq 0 \Leftrightarrow\)</span> 方程组有唯一解, </p>
+<p>且 <span class="arithmatex">\(x_{i}=\frac{\left|A_{i}\right|}{|A|}\)</span>, </p>
+<p>其中 <span class="arithmatex">\(\left|A_{i}\right|\)</span> 是将 <span class="arithmatex">\(A\)</span> 中第 <span class="arithmatex">\(i\)</span> 列的列向量替换成 <span class="arithmatex">\(\mathbf{b}\)</span> 所构成的行列式。</p>
+<p>//<span class="arithmatex">\(|A|\not ={0}\Rightarrow\)</span>意味着这个方程的系数矩阵代表的变换并没有将整个空间压缩到更低的维度：比如说3阶矩阵A，<span class="arithmatex">\(|A|=0\Rightarrow\)</span>本来是三维空间，它将<span class="arithmatex">\(\mathbf{x}\)</span>压缩到了二维，除非<span class="arithmatex">\(\mathbf{b}=A\)</span>即<span class="arithmatex">\(\mathbf{b}\)</span>正好落在了<span class="arithmatex">\(A\)</span>所在的平面，那么它就是不可解的。</p>
+<hr />
+<h3 id="a-mathbfxmathbfb"><strong><span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 解的性质</strong><a class="headerlink" href="#a-mathbfxmathbfb" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(\boldsymbol{\eta}_{1}, \boldsymbol{\eta}_{2}\)</span> 是非齐次方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 的两个解,
+则 <span class="arithmatex">\(A\left(\boldsymbol{\eta}_{1}-\mathbf{\eta}_{2}\right)=\mathbf{b}-\mathbf{b}=\mathbf{0}\)</span>,
+即 <span class="arithmatex">\(\boldsymbol{\eta}_{1}-\boldsymbol{\eta}_{2}\)</span> 是齐次方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的解。</p>
+<h4 id="_7"><strong>例题</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>设 <span class="arithmatex">\(n\)</span> 阶矩阵 <span class="arithmatex">\(A\)</span>, 若向量 <span class="arithmatex">\([1,0,0]^{\top},[0,2,0]^{\top},[0,0,3]^{\top}\)</span> 是非齐次线性方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 的解， 则</p>
+<p>A. <span class="arithmatex">\(|A|&gt;0\)</span></p>
+<p>B. <span class="arithmatex">\(|A|&lt;0\)</span></p>
+<p>C. <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系至少含有 2 个线性无关的解向量</p>
+<p>D. <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系为 3 个线性无关的解向量</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>根据题设, 向量 <span class="arithmatex">\([1,0,0]^{\top},[0,2,0]^{\top},[0,0,3]^{\top}\)</span> 是 <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 的解, </p>
+<p>则 <span class="arithmatex">\([1,0,0]^{\top}-[0,2,0]^{\top}=[1,-2,0]^{\top}\)</span> 与 </p>
+<p><span class="arithmatex">\([0,2,0]^{\top}-[0,0,3]^{\top}=[0,2,-3]^{\top}\)</span> 是 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的 2 个非零解。</p>
+<blockquote>
+<p>由<span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 解的性质</p>
+</blockquote>
+<p>且因为 <span class="arithmatex">\(\left[\begin{array}{ccc}1 &amp; -2 &amp; 0 \\ 0 &amp; 2 &amp; -3\end{array}\right]\)</span> 为梯型矩阵, 可知 <span class="arithmatex">\([1,-2,0]^{\top}\)</span> 与 <span class="arithmatex">\([0,2,-3]^{\top}\)</span> 线性无关。</p>
+<p>因此 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系至少含有 2 个线性无关的解向量。</p>
+<p>选 C.</p>
+<p>其余选项：</p>
+<p><span class="arithmatex">\(\mathrm{A}, \mathrm{B}:\)</span> <strong>根据克拉默法则, 存在非零解, 则 <span class="arithmatex">\(|A|=0 .\)</span></strong> </p>
+<p>D. <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系可以只包括 <span class="arithmatex">\([1,-2,0]^{\top},[0,2,-3]^{\top}\)</span> 这 2 个线性无关的解向量。</p>
+<p>注意其它由题设得到的齐次线性方程组的解, 例如 <span class="arithmatex">\([1,0,0]^{\top}-[0,0,3]^{\top}=[1,0,-3]^{\top}\)</span> 与 <span class="arithmatex">\([1,-2,0]^{\top},[0,2,-3]^{\top}\)</span> 线性相关, 因为 <span class="arithmatex">\([1,0,-3]^{\top}=[1,-2,0]^{\top}+[0,2,-3]^{\top}\)</span></p>
+</details>
+<hr />
+<h2 id="_8"><strong>齐次线性方程</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>若包含 <span class="arithmatex">\(n\)</span> 个方程 <span class="arithmatex">\(n\)</span> 个末知量的齐次线性方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span>, 即</p>
+<div class="arithmatex">\[
+\left\{\begin{array}{l}
+a_{11} x_{1}+a_{12} x_{2}+\cdots+a_{1 n} x_{n}=0 \\
+a_{21} x_{1}+a_{22} x_{2}+\cdots+a_{2 n} x_{n}=0 \\
+\cdots \ldots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \\
+a_{n 1} x_{1}+a_{n 2} x_{2}+\cdots+a_{n n} x_{n}=0
+\end{array}\right.
+\]</div>
+<p>称为<span class="arithmatex">\(n\)</span>个未知数<span class="arithmatex">\(m\)</span>个方程的齐次线性方程组，它可以被看作是对应非齐次线性方程组的导出组。</p>
+<hr />
+<h3 id="_9"><strong>线性无关解的个数</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(A_{m \times n} \mathbf{x}=\mathbf{0}\)</span>, 线性无关解的个数 <span class="arithmatex">\(=n-r(A)\)</span></p>
+<hr />
+<h3 id="_10"><strong><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gabriel_Cramer.jpg/220px-Gabriel_Cramer.jpg">克拉默</a>法则</strong><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>点击标题超链接有一张克拉默靓照</p>
+</blockquote>
+<ol>
+<li><span class="arithmatex">\(|A|=0 \Leftrightarrow\)</span> 方程组有非零解; </li>
+<li><span class="arithmatex">\(|A| \neq 0 \Leftrightarrow\)</span> 方程组有唯一零解</li>
+</ol>
+<p>【理解】</p>
+<p>将方程组写成向量形式:</p>
+<p><span class="arithmatex">\(\boldsymbol{\alpha}_{1} x_{1}+\boldsymbol{\alpha}_{2} x_{2}+\cdots+\boldsymbol{\alpha}_{n} x_{n}=\mathbf{0}\)</span></p>
+<p>则有非零解 <span class="arithmatex">\(\Leftrightarrow \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n}\)</span> 线性相关 <span class="arithmatex">\(\Leftrightarrow|A|=0\)</span>;</p>
+<p>有唯一零解 <span class="arithmatex">\(\Leftrightarrow \alpha_{1}, \alpha_{2}, \cdots, \alpha_{n}\)</span> 线性无关 <span class="arithmatex">\(\Leftrightarrow|A| \neq 0\)</span>.</p>
+<h4 id="_11"><strong>例题</strong><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>若 <span class="arithmatex">\(A\)</span> 是 <span class="arithmatex">\(n\)</span> 阶矩阵, 且 <span class="arithmatex">\(A\)</span> 不可逆。</p>
+<p>有 <span class="arithmatex">\(\boldsymbol{\alpha}\)</span> 是 <span class="arithmatex">\(n\)</span> 维列向量, 得到矩阵 <span class="arithmatex">\(B=\left[\begin{array}{rr}A &amp; \boldsymbol{\alpha} \\ \boldsymbol{\alpha}^{\top} &amp; 0\end{array}\right]\)</span>, 且 <span class="arithmatex">\(r(B)=r(A)+1\)</span>, 则线性方程组</p>
+<p>A. <span class="arithmatex">\(A \mathbf{x}=\boldsymbol{\alpha}\)</span> 必有无穷多解</p>
+<p>B. <span class="arithmatex">\(A \mathbf{x}=\boldsymbol{\alpha}\)</span> 必有唯一解</p>
+<p>C. <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> 必有非零解</p>
+<p>D. <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> 有唯一零解</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p>由题设 <span class="arithmatex">\(A\)</span> 是 <span class="arithmatex">\(n\)</span> 阶矩阵, </p>
+<p>且 <span class="arithmatex">\(A\)</span> 不可逆 有 <span class="arithmatex">\(r(A)&lt;n .\)</span></p>
+<p>有 <span class="arithmatex">\(B=\left[\begin{array}{cc}A &amp; \boldsymbol{\alpha} \\ \boldsymbol{\alpha}^{\top} &amp; 0\end{array}\right]\)</span> 是 <span class="arithmatex">\(n+1\)</span> 阶矩阵,</p>
+<p>且 <span class="arithmatex">\(r(B)=r(A)+1&lt;n+1\)</span>,</p>
+<p>故 <span class="arithmatex">\(|B|=0\)</span>. 由克拉默法则, 则 <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> 必有非零解。</p>
+<p>选C.</p>
+<p>其余选项:</p>
+<p><span class="arithmatex">\(\mathrm{A}, \mathrm{B}\)</span> : 当 <span class="arithmatex">\(r(A \mid \boldsymbol{\alpha})=r(A)+1, A \mathbf{x}=\boldsymbol{\alpha}\)</span> 无解。所以错误。</p>
+</details>
+<hr />
+<h3 id="a-mathbfxmathbf0"><strong><span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系</strong><a class="headerlink" href="#a-mathbfxmathbf0" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(\xi_{1}, \xi_{2}, \cdots, \xi_{n-r}\)</span> 是 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的解向量, 若满足</p>
+<p>(1) <span class="arithmatex">\(\xi_{1}, \xi_{2}, \cdots, \xi_{n-r}\)</span> 线性无关。</p>
+<p>(2) <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的<strong>任一解</strong><span class="arithmatex">\(\xi\)</span> 均可由 <span class="arithmatex">\(\xi_{1}, \xi_{2}, \cdots, \xi_{n-r}\)</span> 线性表出，</p>
+<p>则称向量组 <span class="arithmatex">\(\xi_{1}, \xi_{2}, \cdots, \xi_{n-r}\)</span> 是 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的一组基础解系。（不唯一）</p>
+<p>【理解】 (不要求)</p>
+<p>基础解系，即<strong>所有解向量</strong>的一个极大线性无关组, </p>
+<p>也即 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 解的向量空间的基 (所以说可以表示出来任意解)。</p>
+<h4 id="_12"><strong>例题</strong><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>设向量 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\)</span> 是齐次方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的一个基础解系, </p>
+<p>向量 <span class="arithmatex">\(\beta\)</span> 不是方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的解, 即 <span class="arithmatex">\(A \beta \neq \mathbf{0}\)</span>. </p>
+<p>证明向量组 <span class="arithmatex">\(\beta, \beta+\alpha_{1}, \beta+\alpha_{1}+\alpha_{2}, \cdots, \beta+\alpha_{1}+\alpha_{t}\)</span> 线性无关。</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>【证明】
+1. 由 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\)</span> 是基础解系，则它们线性无关, 秩 <span class="arithmatex">\(r\left(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\right)=t\)</span>.
+2. 又向量 <span class="arithmatex">\(\beta\)</span> 不是方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的解，则 <span class="arithmatex">\(\beta\)</span> 不能由 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\)</span> 线性表出, 故 <span class="arithmatex">\(r\left(\beta, \alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\right)=t+1\)</span>.
+3. 经初等变换向量组的秩不变，对于向量组 <span class="arithmatex">\(\left(\beta, \alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\right)\)</span> 把第 1 列加至第 2 列, 再将第 2 列分别加至除第 1 列外的其余各列, 有 <span class="arithmatex">\(\left(\beta, \alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\right) \rightarrow\left(\beta, \beta+\alpha_{1}, \beta+\alpha_{1}+\alpha_{2}, \cdots, \beta+\alpha_{1}+\alpha_{t}\right)\)</span>
+4. 因此 <span class="arithmatex">\(r\left(\beta, \beta+\alpha_{1}, \beta+\alpha_{1}+\alpha_{2}, \cdots, \beta+\alpha_{1}+\alpha_{t}\right)=r\left(\beta, \alpha_{1}, \alpha_{2}, \cdots, \alpha_{t}\right)=t+1\)</span>, 且题设中的向量组有 <span class="arithmatex">\(t+1\)</span> 个向量, 即向量组 <span class="arithmatex">\(\beta, \beta+\alpha_{1}, \beta+\alpha_{1}+\alpha_{2}, \cdots, \beta+\alpha_{1}+\alpha_{t}\)</span> 线性无关</p>
+</details>
+<hr />
+<h3 id="a-mathbfxmathbf0_1"><strong>求 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系：</strong><a class="headerlink" href="#a-mathbfxmathbf0_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>将 <span class="arithmatex">\(A\)</span> 用高斯消元法化为阶梯形矩阵 <span class="arithmatex">\(B\)</span>.
+原方程组与 <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> 同解。</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(B\)</span> 有 <span class="arithmatex">\(r\)</span> 行不为 0 , 则有 <span class="arithmatex">\(r\)</span> 个独立末知量, <span class="arithmatex">\(n-r\)</span> 个自由末知量。
+    例如:
+    <span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right] \mathbf{x}=\mathbf{0}\)</span>
+    则 <span class="arithmatex">\(x_{1}, x_{3}\)</span> 为独立末知量（对应阶梯形矩阵 <span class="arithmatex">\(B\)</span> 的非零行中首个非零元素所在的列 <span class="arithmatex">\()\)</span>
+    而 <span class="arithmatex">\(x_{2}, x_{4}\)</span> 为自由末知量。</p>
+</li>
+<li>
+<p>令 <span class="arithmatex">\(x_{2}=1, x_{4}=0\)</span>, 代入方程组</p>
+<p><span class="arithmatex">\(1 \cdot x_{1}+1 \cdot x_{2}=0\)</span></p>
+<p><span class="arithmatex">\(1 \cdot x_{3}+1 \cdot x_{4}=0\)</span></p>
+<p>则 <span class="arithmatex">\(x_{1}=-1, x_{3}=0 .\)</span> 有一个基础解 <span class="arithmatex">\(\xi_{1}=(-1,1,0,0)^{\top}\)</span>.</p>
+</li>
+<li>
+<p>同理, 令 <span class="arithmatex">\(x_{2}=0, x_{4}=1\)</span>, 解得 <span class="arithmatex">\(x_{1}=0, x_{3}=-1 .\)</span> 则第二个基础解 <span class="arithmatex">\(\xi_{2}=(0,0,-1,1)^{\top}\)</span>.
+则 <span class="arithmatex">\(\xi_{1}=(-1,1,0,0)^{\top}\)</span> 与 <span class="arithmatex">\(\xi_{2}=(0,0,-1,1)^{\top}\)</span> 是方程组的基础解系。</p>
+</li>
+</ol>
+<hr />
+<h2 id="_13"><strong>通解</strong><a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="_14"><strong>求通解</strong><a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h4 id="a-mathbfxmathbfb_1"><span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 有特解求通解<a class="headerlink" href="#a-mathbfxmathbfb_1" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>设 <span class="arithmatex">\(A_{m \times n} \mathbf{x}=\mathbf{b}\)</span> 有特解 <span class="arithmatex">\(\boldsymbol{\eta}\)</span>, </p>
+</li>
+<li>
+<p>对应的齐次线性方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 有基础解系 <span class="arithmatex">\(\boldsymbol{\xi}_{1}, \boldsymbol{\xi}_{2}, \cdots, \boldsymbol{\xi}_{n-r}\)</span>, </p>
+</li>
+</ol>
+<p>则 <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 的通解为 <span class="arithmatex">\(k_{1} \xi_{1}+k_{2} \xi_{2}+\cdots+k_{n-r} \xi_{n-r}+\mathbf{\eta}\)</span>, 其中 <span class="arithmatex">\(k_{1}, k_{2}, \cdots, k_{n-r}\)</span> 是任意常数。</p>
+<p>//也就是说求通解需要两个条件： <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>的特解 以及 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span>的基础解系</p>
+<p>【注意】</p>
+<p>基础解系的向量个数为 <span class="arithmatex">\(n-r\)</span>, 其中 <span class="arithmatex">\(n\)</span> 是 <span class="arithmatex">\(A\)</span> 的阶数（或者说是方程组中未知量的个数，系数矩阵的列数）,<span class="arithmatex">\(r\)</span> 是 <span class="arithmatex">\(A\)</span> 的秩。</p>
+<p>例如: 4 阶矩阵 <span class="arithmatex">\(A\)</span> 的秩 <span class="arithmatex">\(r(A)=1\)</span>, 有 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系包括 <span class="arithmatex">\(n-r=3\)</span> 个基础解向量。</p>
+<h3 id="_15"><strong>已知两个通解，求公共解</strong><a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>已知两个方程组的通解, </p>
+<p><strong>令通解相等,</strong></p>
+<p>解关于常数 <span class="arithmatex">\(k_{1}, k_{2}, \cdots\)</span> 的新方程组。</p>
+<p>【拓展】
+求公共解，分三种情况:
+1. 两个方程组都给出，则联立方程组
+2. 给出方程组 (I) 的通解, 与方程组 (II) , 则将通解代入方程组 (II)
+3. 给出两个方程组的通解 (如上)，则令通解相等</p>
+<h3 id="a"><strong>已知通解求系数矩阵<span class="arithmatex">\(A\)</span></strong><a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<p>将基础解系、通解、或特解代入相应方程组， 即得到关于系数矩阵的新方程组 <span class="arithmatex">\(A \xi=\mathbf{b}\)</span>, 解之则得到系数矩阵 <span class="arithmatex">\(A\)</span>.</p>
+<p>常见题型:</p>
+<p>将基础解系、通解、或特解代入相应方程组，即得到关于系数矩阵的新方程组, 解之则得到系数矩阵。</p>
+<h4 id="a-mathbfxmathbf0_2"><strong>齐次方程组<span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span>：</strong><a class="headerlink" href="#a-mathbfxmathbf0_2" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(\xi_{1}, \xi_{2}\)</span> 为 <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> 的基础解系, 则 <span class="arithmatex">\(A\left[\xi_{1}, \xi_{2}\right]=O\)</span>.</p>
+<p>两边转置得到新的方程组 <span class="arithmatex">\(\left[\begin{array}{l}\xi_{1}^{T} \\ \xi_{2}^{T}\end{array}\right] A^{\top}=O\)</span>.</p>
+<blockquote>
+<p>两边同时转置，每个矩阵分别转置后交换位置</p>
+<p>这是一种很常见的方法，可以将解，例如基础解系、通解、特解等转化成新的方程组用于求解原本的系数矩阵<span class="arithmatex">\(A\)</span></p>
+</blockquote>
+<p>即 <span class="arithmatex">\(A\)</span> 的行向量为新方程组的解。</p>
+<p>因为 <span class="arithmatex">\(r(A)+r\left(\xi_{1}, \xi_{2}\right)=n\)</span>, 则 <span class="arithmatex">\(A\)</span> 的行向量为新方程组的基础解系。</p>
+<h5 id="_16">例题<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>已知两个方程四个末知量的齐次线性方程组的通解为 <span class="arithmatex">\(\mathbf{x}=k_{1}[1,0,2,3]^{\top}+k_{2}[0,1,-1,1]^{\top}\)</span>, 求原齐次线性方程组。(注：答案不唯一)</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>证明：
+设线性方程组 <span class="arithmatex">\(A_{2 \times 4} \mathbf{x}=\mathbf{0}\)</span>. </p>
+<p>令 <span class="arithmatex">\(\boldsymbol{\xi}_{1}=[1,0,2,3]^{\top}, \boldsymbol{\xi}_{2}=[0,1,-1,1]^{\top} .\)</span></p>
+<p>由通解 <span class="arithmatex">\(\mathbf{x}=k_{1} \boldsymbol{\xi}_{1}+k_{2} \boldsymbol{\xi}_{2}\)</span>, 则 <span class="arithmatex">\(A\left[\xi_{1}, \boldsymbol{\xi}_{2}\right]=\mathbf{O} .\)</span></p>
+<p>两边转置得到新的方程组 <span class="arithmatex">\(\left[\begin{array}{l}\xi_{1}^{T} \\ \xi_{2}^{T}\end{array}\right] A^{\top}=\mathbf{O}\)</span> ，</p>
+<p>则新方程组的基础解系, 即是原方程组系数矩阵的行向量。</p>
+<p>以下求此方程组的解:</p>
+<p>有 <span class="arithmatex">\(\left[\begin{array}{l}\xi_{1}^{T} \\ \xi_{2}^{T}\end{array}\right] y=\mathbf{0}\)</span>, </p>
+<p>即<span class="arithmatex">\(\left\{\begin{array}{l}
+y_{1}+2 y_{3}+3 y_{4}=0 \\
+y_{2}-y_{3}+y_{4}=0
+\end{array}\right.\)</span></p>
+<p><strong>方程组的系数矩阵为 <span class="arithmatex">\(B=\left[\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 &amp; 1\end{array}\right] .\)</span></strong></p>
+<p>令 <span class="arithmatex">\(y_{1}, y_{2}\)</span> 为独立末知变量, <span class="arithmatex">\(y_{3}, y_{4}\)</span> 为自由末知变量。</p>
+<p><strong>令 <span class="arithmatex">\(y_{3}=1, y_{4}=0\)</span>, 解得 <span class="arithmatex">\(y_{1}=-2, y_{2}=1\)</span>.</strong></p>
+<p><strong>令 <span class="arithmatex">\(y_{3}=0, y_{4}=1\)</span>, 解得 <span class="arithmatex">\(y_{1}=-3, y_{2}=-1\)</span></strong></p>
+<p>则基础解系为 <span class="arithmatex">\(\boldsymbol{\eta}_{1}=[-2,1,1,0]^{\top}, \boldsymbol{\eta}_{2}=[-3,-1,0,1]^{\top}\)</span>, </p>
+<p><strong>故原方程组为 <span class="arithmatex">\(\left\{\begin{array}{l}-2 x_{1}+x_{2}+x_{3}=0 \\ -3 x_{1}-x_{2}+x_{4}=0\end{array}\right.\)</span></strong></p>
+</details>
+<hr />
+<h4 id="_17">已知通解求原齐次线性方程组<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<h5 id="_18">例题<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>已知两个方程四个末知量的齐次线性方程组</p>
+<p>通解为 <span class="arithmatex">\(\mathbf{x}=k_{1}[1,0,2,3]^{\top}+k_{2}[0,1,-1,1]^{\top}\)</span>, </p>
+<p>求原齐次线性方程组。 (注: 答案不唯一)</p>
+</blockquote>
+<details class="答案"><summary>答案</summary><p><h3>[分析]：设线性方程组 <span class="arithmatex">\(A_{2 \times 4} \mathbf{x}=\mathbf{0}\)</span>. </p>
+<p>令 <span class="arithmatex">\(\boldsymbol{\xi}_{1}=[1,0,2,3]^{\top}, \xi_{2}=[0,1,-1,1]^{\top} .\)</span></p>
+<p>由通解 <span class="arithmatex">\(\mathbf{x}=k_{1} \xi_{1}+k_{2} \boldsymbol{\xi}_{2}\)</span>, 则 <span class="arithmatex">\(A\left[\xi_{1}, \boldsymbol{\xi}_{2}\right]=\mathbf{O} .\)</span></p>
+<p>两边转置得到新的方程组 <span class="arithmatex">\(\left[\begin{array}{l}\xi_{1}^{T} \\ \xi_{2}^{T}\end{array}\right] A^{\top}=\mathbf{O}\)</span>,</p>
+<p>则新方程组的基础解系, 即是原方程组系数矩阵的行向量。</p>
+<p>以下求此方程组的解:</p>
+<p>立方程组 <span class="arithmatex">\(\left[\begin{array}{l}\xi_{1}^{T} \\ \xi_{2}^{T}\end{array}\right] y=\mathbf{0}\)</span>, </p>
+<p>即<span class="arithmatex">\(\left\{\begin{array}{l}y_{1}+2 y_{3}+3 y_{4}=0 \\ y_{2}-y_{3}+y_{4}=0\end{array}\right.\)</span></p>
+<p>方程组的系数矩阵为 <span class="arithmatex">\(B=\left[\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 &amp; 1\end{array}\right]\)</span>.</p>
+<p>则令 <span class="arithmatex">\(y_{1}, y_{2}\)</span> 为独立末知变量, <span class="arithmatex">\(y_{3}, y_{4}\)</span> 为自由末知变量。</p>
+<p>令 <span class="arithmatex">\(y_{3}=1, y_{4}=0\)</span>, 解得 <span class="arithmatex">\(y_{1}=-2, y_{2}=1\)</span>.</p>
+<p>令 <span class="arithmatex">\(y_{3}=0, y_{4}=1\)</span>, 解得 <span class="arithmatex">\(y_{1}=-3, y_{2}=-1\)</span>.</p>
+<p>则基础解系为 <span class="arithmatex">\(\boldsymbol{\eta}_{1}=[-2,1,1,0]^{\top}, \mathbf{\eta}_{2}=[-3,-1,0,1]^{\top}\)</span>, </p>
+<p>故原方程组为 <span class="arithmatex">\(\left\{\begin{array}{l}-2 x_{1}+x_{2}+x_{3}=0 \\ -3 x_{1}-x_{2}+x_{4}=0\end{array}\right.\)</span></p>
+</details>
+<h4 id="a-mathbfxmathbfb_2"><strong>非齐次方程组<span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>：</strong><a class="headerlink" href="#a-mathbfxmathbfb_2" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> 的通解为 <span class="arithmatex">\(k(1,0,1)^{\top}+(2,0,0)^{\top} .\)</span></p>
+<p>则此通解满足 <span class="arithmatex">\(A\left[\begin{array}{c}k+2 \\ 0 \\ k\end{array}\right]=\mathbf{b}\)</span>, 对任意 <span class="arithmatex">\(k\)</span> 都成立
+基础解系 <span class="arithmatex">\((1,0,1)^{\top}\)</span> 满足 <span class="arithmatex">\(A\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right]=\mathbf{0}\)</span>
+特解 <span class="arithmatex">\((2,0,0)\)</span> 满足 <span class="arithmatex">\(A\left[\begin{array}{l}2 \\ 0 \\ 0\end{array}\right]=\mathbf{b} .\)</span></p>
+<h2 id="_19"><strong>同解</strong><a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<p>两个方程组同解的充要条件 </p>
+<ol>
+<li>线性无关解的个数相同 <span class="arithmatex">\(\Leftrightarrow\)</span> 系数矩阵的秩相同</li>
+<li>基础解系相同, 通解也相同 <span class="arithmatex">\(\Leftrightarrow\)</span> 将方程组 1 的通解代入方程组 2 ，则方程组 2 成立; 反之亦然。</li>
+</ol>
+<details class="证明"><summary>证明</summary><p><h3>1. 齐次方程组 <span class="arithmatex">\(A \mathbf{x}=\mathbf{a}, B \mathbf{x}=\mathbf{b}\)</span>.
+  由方程组同解, 则 <span class="arithmatex">\(n-r(A)=\)</span> 方程 <span class="arithmatex">\((\)</span> । <span class="arithmatex">\()\)</span> 线性无关解的个数 <span class="arithmatex">\(=\)</span> 方程（III) 线性无关解的个数 <span class="arithmatex">\(=n-r(B)\)</span>.</p>
+<ol>
+<li>非齐次方程组:
+将通解两两相减, 得到对应的齐次方程组的解，则对应的齐次方程组也同解。由 1 , 有 <span class="arithmatex">\(r(A)=r(B)\)</span>.</li>
+</ol>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 秩与向量" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              秩与向量
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-footer__link md-footer__link--next" aria-label="Next: 特征值与特征向量" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              特征值与特征向量
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

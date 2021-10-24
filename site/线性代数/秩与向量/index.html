@@ -1,0 +1,1075 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>秩与向量 - 考研数学文档 Kmath</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="考研数学文档 Kmath" class="md-header__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            考研数学文档 Kmath
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              秩与向量
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-tabs__link">
+        高等数学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-tabs__link md-tabs__link--active">
+        线性代数
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chap1.md" class="md-tabs__link">
+        概率论
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-tabs__link">
+      其他相关概念
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="考研数学文档 Kmath" class="md-nav__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    考研数学文档 Kmath
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        高等数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="高等数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          高等数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-nav__link">
+        函数极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        数列极限
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        连续、间断与导数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        中值定理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        积分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        微分方程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E7%BA%A7%E6%95%B0%E5%88%A4%E6%95%9B/" class="md-nav__link">
+        级数判敛
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        线性代数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="线性代数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        行列式与矩阵
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          秩与向量
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        秩与向量
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    线性相关与线性表出
+  </a>
+  
+    <nav class="md-nav" aria-label="线性相关与线性表出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    线性相关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    线性表出
+  </a>
+  
+    <nav class="md-nav" aria-label="线性表出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    向量组线性表出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    向量组等价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    性质
+  </a>
+  
+    <nav class="md-nav" aria-label="性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    秩
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        线性方程组
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-nav__link">
+        特征值与特征向量
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        概率论
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chap1.md" class="md-nav__link">
+        chap1
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其他相关概念
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    线性相关与线性表出
+  </a>
+  
+    <nav class="md-nav" aria-label="线性相关与线性表出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    线性相关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    线性表出
+  </a>
+  
+    <nav class="md-nav" aria-label="线性表出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    向量组线性表出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    向量组等价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    性质
+  </a>
+  
+    <nav class="md-nav" aria-label="性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    秩
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/edit/master/docs/线性代数/秩与向量.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">秩与向量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_2">导图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="https://app.bestzixue.com/diagram/knowledge_flowchart_la_vector-rank.jpg" /></p>
+<hr />
+<h2 id="_3">线性相关与线性表出<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">线性相关<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>存在不全为零的数 <span class="arithmatex">\(k_{1}, k_{2}, \cdots, k_{s}\)</span> 使得 <span class="arithmatex">\(k_{1} \alpha_{1}+k_{2} \alpha_{2}+\cdots+k_{s} \alpha_{s}=0\)</span>, 则称向量组 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{s}\)</span> 线性相关</p>
+<h3 id="_5">线性表出<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>若 <span class="arithmatex">\(k_{1} \alpha_{1}+k_{2} \alpha_{2}+\cdots+k_{s} \alpha_{s}=\beta\)</span>, 则称向量 <span class="arithmatex">\(\beta\)</span> 可由向量 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{s}\)</span> 线性表出。</p>
+<h4 id="_6">向量组线性表出<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>如果（Ⅰ）中每一个向量都可由（Ⅱ）中的向量线性表出，则称向量组（Ⅰ）可由向量组（Ⅱ）线性表出。</p>
+<h4 id="_7">向量组等价<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>即（Ⅰ）（Ⅱ）可以相互线性表出</p>
+<hr />
+<h4 id="_8"><h2>例题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>下列哪一个选项是正确的?</p>
+<p>A. 若 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关则向量 <span class="arithmatex">\(\gamma\)</span> 可以被 <span class="arithmatex">\(\alpha, \beta\)</span> 线性表出</p>
+<p>B. 若向量 <span class="arithmatex">\(\gamma\)</span> 可以被 <span class="arithmatex">\(\alpha, \beta\)</span> 线性表出, 则 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关</p>
+<p>C. 若 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关, 则向量 <span class="arithmatex">\(\alpha\)</span> 可以被 <span class="arithmatex">\(\beta\)</span> 线性表出</p>
+<p>D. 以上都不对</p>
+<details class="答案"><summary>答案</summary><p><h3>选 B.</p>
+<p>若向量 <span class="arithmatex">\(\gamma\)</span> 可以被 <span class="arithmatex">\(\alpha, \beta\)</span> 线性表出，则存在实数 <span class="arithmatex">\(k_{1}, k_{2}\)</span> 使得 <span class="arithmatex">\(k_{1} \alpha+k_{2} \beta=\gamma\)</span>.</p>
+<p>则有 <span class="arithmatex">\(k_{1} \alpha+k_{2} \beta-\gamma=0\)</span>.</p>
+<p>令 <span class="arithmatex">\(k_{3}=-1\)</span>, 则存在不全为零的数 <span class="arithmatex">\(k_{1}, k_{2}, k_{3}\)</span> 使得</p>
+<p><span class="arithmatex">\(k_{1} \alpha+k_{2} \beta+k_{3} \gamma=0\)</span></p>
+<p>即 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关。</p>
+<p><strong>其余选项:</strong></p>
+<p>根据线性相关的定义, 若 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关, 则存在不全为零的数 <span class="arithmatex">\(k_{1}, k_{2}, k_{3}\)</span> 使得 <span class="arithmatex">\(k_{1} \alpha+k_{2} \beta+k_{3} \gamma=0\)</span>.</p>
+<p>仅当 <span class="arithmatex">\(k_{i} \neq 0\)</span> 时, 其对应的向量才可以被其余向量线性表出。</p>
+<p>例如, 若 <span class="arithmatex">\(k_{3} \neq 0\)</span>, 则 <span class="arithmatex">\(\gamma=-\frac{k_{1}}{k_{3}} \alpha-\frac{k_{2}}{k_{3}} \beta\)</span>.</p>
+<p>因为 <span class="arithmatex">\(A, C\)</span> 中的 <span class="arithmatex">\(k_{i}\)</span> 是否为 0 不确定, 所以都错误。</p>
+<p>举例：</p>
+<p><span class="arithmatex">\(\left[\begin{array}{l}\alpha \\ \beta \\ \gamma\end{array}\right]=\left[\begin{array}{lll}1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0\end{array}\right]\)</span>, 则 <span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 线性相关, 但向量 <span class="arithmatex">\(\gamma\)</span> 不能被 <span class="arithmatex">\(\alpha, \beta\)</span> 线性表出。</p>
+<p>注意这里不存在 <span class="arithmatex">\(k_{1}, k_{2}, k_{3}\)</span> 不全为零且 <span class="arithmatex">\(k_{3} \neq 0\)</span>, 使得 <span class="arithmatex">\(k_{1} \alpha+k_{2} \beta+k_{3} \gamma=0\)</span>.</p>
+</details>
+<hr />
+<h2 id="_9">极大无关组<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">定义<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>给定向量组 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{s}\)</span> 的极大线性无关组满足两个条件:
+(1) 部分组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\)</span> 线性无关;
+(2) 极大：再添加任一向量 <span class="arithmatex">\(\alpha_{j}(1 \leq j \leq s)\)</span>, 向量组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}, \alpha_{j}\)</span> 必线性相关。</p>
+<h3 id="_11">性质<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>对于 <span class="arithmatex">\(a_{i_{1}}\)</span>, 有 <span class="arithmatex">\(\alpha_{i_{1}}=\alpha_{i_{1}}+0 \cdot \alpha_{1}+\cdots+0 \cdot \alpha_{s}\)</span>, 
+   则极大线性无关组中的任意向量可以由原向量组表出。</p>
+</li>
+<li>
+<p>向量组与它的极大线性无关组等价, 且等价具有传递性</p>
+</li>
+</ol>
+<h4 id="_12">例题<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>若向量组 <span class="arithmatex">\((I)\)</span> 是向量组 <span class="arithmatex">\((I I)\)</span> 的极大线性无关组, 向量组 <span class="arithmatex">\((I I I)\)</span> 是向量组 <span class="arithmatex">\((I V)\)</span> 的极大线性无关组, 向量组 (I) 与 (III) 等价，则</p>
+<p>A. 向量组 <span class="arithmatex">\((I I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 不等价，且 <span class="arithmatex">\((I)\)</span> 不一定可由 <span class="arithmatex">\((I V)\)</span> 线性表出</p>
+<p>B. 向量组 <span class="arithmatex">\((I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 等价，但 <span class="arithmatex">\((I)\)</span> 不一定可由 <span class="arithmatex">\((I V)\)</span> 线性表出</p>
+<p>C. 向量组 <span class="arithmatex">\((I I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 等价，且 <span class="arithmatex">\((I)\)</span> 可由 <span class="arithmatex">\((I V)\)</span> 线性表出</p>
+<p>D. 向量组 <span class="arithmatex">\((I I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 不等价, 但 <span class="arithmatex">\((I)\)</span> 可由 <span class="arithmatex">\((I I I)\)</span> 线性表出</p>
+<details class="答案"><summary>答案</summary><p><h2>【简解】</p>
+<p>向量组与它的极大线性无关组等价, 且等价具有传递性，则 <span class="arithmatex">\((I) \sim(I I) \sim(I I I) \sim(I V)\)</span>, 且两两可以互相线性表出。 选 C.</p>
+<p>【理解】</p>
+<p>两个向量组等价，即它们对应的向量空间一致，而极大无关组是向量空间的基。 所以向量组 <span class="arithmatex">\((I),(I I),(I I I)\)</span> 都是此空间的基，但它们不一定相同。</p>
+<p>【详解】</p>
+<p>给定向量组 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \cdots, \alpha_{s}\)</span> 的极大线性无关组满足两个条件:</p>
+<p>(1) 部分组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\)</span> 线性无关;</p>
+<p>(2) 极大： 再添加任一向量 <span class="arithmatex">\(\alpha_{j}(1 \leq j \leq s)\)</span>, 向量组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}, \alpha_{j}\)</span> 必线性相关。</p>
+<ol>
+<li>若 <span class="arithmatex">\(\alpha_{j} \in\left\{\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\right\}\)</span>, 不失一般性, 令 <span class="arithmatex">\(\alpha_{j}=\alpha_{i_{1}}=\alpha_{i_{1}}+0 \cdot \alpha_{i_{2}}+\cdots+0 \cdot \alpha_{i_{r}}\)</span>, 则 <span class="arithmatex">\(\alpha_{j}\)</span> 可以由极大线性无关组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\)</span> 线性表出。</li>
+<li>若 <span class="arithmatex">\(\alpha_{j} \notin\left\{\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\right\}\)</span>, 由 <span class="arithmatex">\((2)\)</span> 及线性相关的定义，存在不全为零的数 <span class="arithmatex">\(k_{1}, k_{2}, \cdots, k_{r}, k_{j}\)</span> 使得 <span class="arithmatex">\(k_{1} \alpha_{i_{1}}+k_{2} \alpha_{i_{2}}+\cdots+k_{r} \alpha_{i_{r}}+k_{j} \alpha_{i_{j}}=0\)</span></li>
+</ol>
+<p>若 <span class="arithmatex">\(k_{j}=0\)</span>, 则存在不全为零的数 <span class="arithmatex">\(k_{1}, k_{2}, \cdots, k_{r}\)</span> 使得 <span class="arithmatex">\(k_{1} \alpha_{i_{1}}+k_{2} \alpha_{i_{2}}+\cdots+k_{r} \alpha_{i_{r}}=\mathbf{0}\)</span>, 即 向量组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\)</span> 线性相关， 与定义矛盾, 所以 <span class="arithmatex">\(k_{j} \neq 0\)</span>.</p>
+<p>则 <span class="arithmatex">\(\alpha_{j}=-\frac{k_{1}}{k_{j}} \alpha_{i_{1}}-\frac{k_{2}}{k_{j}} \alpha_{i_{2}}-\cdots-\frac{k_{r}}{k_{j}} \alpha_{i_{r}}\)</span>, 即 <span class="arithmatex">\(\alpha_{j}\)</span> 可以由极大线性无关组 <span class="arithmatex">\(\alpha_{i_{1}}, \alpha_{i_{2}}, \cdots, \alpha_{i_{r}}\)</span> 线性表出。</p>
+<p>对于 <span class="arithmatex">\(a_{i_{1}}\)</span>, 有 <span class="arithmatex">\(\alpha_{i_{1}}=\alpha_{i_{1}}+0 \cdot \alpha_{1}+\cdots+0 \cdot \alpha_{s}\)</span>, 则极大线性无关组中的任意向量可以由原向量组表出。 综上，向量组与它的极大线性无关组可以互相线性表出，即它们等价。</p>
+<p>因为等价具有传递性，若 <span class="arithmatex">\((I)\)</span> 与 <span class="arithmatex">\((I I I)\)</span> 等价, <span class="arithmatex">\((I I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 等价, 则 <span class="arithmatex">\((I)\)</span> 与 <span class="arithmatex">\((I V)\)</span> 等价。因此 <span class="arithmatex">\((I) \sim(I I) \sim(I I I) \sim(I V)\)</span>. 因为等价向量组的定义是可以互相线性表出，则这四个向量组可以两两互相线性表出。 选 C.</p>
+</details>
+<h2 id="_13"><strong>秩</strong><a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>向量组 <span class="arithmatex">\(\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{2}, \cdots, \boldsymbol{\alpha}\)</span>, 的极大线性无关组中所含向量的个数 <span class="arithmatex">\(r\)</span> 称为这个向量组的秩.</p>
+<p>例如，向量组 <span class="arithmatex">\(\boldsymbol{\alpha}_{1}=\left[\begin{array}{l}1 \\ 0\end{array}\right], \boldsymbol{\alpha}_{2}=\left[\begin{array}{l}0 \\ 0\end{array}\right], \boldsymbol{\alpha}_{3}=\left[\begin{array}{l}1 \\ 1\end{array}\right], \boldsymbol{\alpha}_{4}=\left[\begin{array}{l}2 \\ 0\end{array}\right], \boldsymbol{\alpha}_{5}=\left[\begin{array}{l}0 \\ 1\end{array}\right]\)</span>. <span class="arithmatex">\(\boldsymbol{\alpha}_{6}=\left[\begin{array}{l}3 \\ 5\end{array}\right]\)</span> 中, </p>
+<p><span class="arithmatex">\(\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{3}\)</span> 线性无关,再添加向量组中的任一个向量 <span class="arithmatex">\(\boldsymbol{\alpha}_{j}\)</span>, 向量组 <span class="arithmatex">\(\boldsymbol{\alpha}_{1}\)</span>, <span class="arithmatex">\(\alpha_{3}, \alpha_{j}\)</span> 必线性相关, 所以 <span class="arithmatex">\(\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{3}\)</span> 是向量组 <span class="arithmatex">\(\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{2}, \cdots, \boldsymbol{\alpha}_{6}\)</span> 的一个极大线性无关组. 因此, 向量组的秩 <span class="arithmatex">\(r\left(\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{2}, \cdots, \boldsymbol{\alpha}_{6}\right)=2\)</span>.
+* 极大线性无关组<strong>并不唯一</strong>，可以有多组，但是个数是恒定的</p>
+<h2 id="_14"><strong>例题</strong><a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>弃去线性相关的向量：求极大线性无关组的一个重要简化步骤：弃去明显线性相关的向量，包括零向量，相等向量，坐标成比例的向量，为两行之和的向量。</p>
+<p>已知向量组 
+<span class="arithmatex">\((I): \alpha_{1}, \alpha_{2}, \alpha_{3} ;
+(I I): \alpha_{1}, \alpha_{4} ;(I I I): \alpha_{3}, \alpha_{4}, \alpha_{5}\)</span>, </p>
+<p>且 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \alpha_{3}, \alpha_{4}, \alpha_{5}\)</span> 为非零向量. </p>
+<p>如果上述向量组的秩分别为 <span class="arithmatex">\(r(I)=1, r(I I)=2, r(I I I)=2\)</span>.</p>
+<p>则向量组 <span class="arithmatex">\((I V): \alpha_{1}, \alpha_{2}, \alpha_{4}, \alpha_{5}\)</span> 的秩为：</p>
+<details class="答案"><summary>答案</summary><p><h3>最直观的思考方法, 用极大线性无关组 (以下简称极大无关组)</p>
+<p>【简解】</p>
+<p>又 <span class="arithmatex">\(r(I I)=2\)</span>, 则 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I)\)</span> 的极大无关组。</p>
+<p>又 <span class="arithmatex">\(r(I I I)=2\)</span>, 则 <span class="arithmatex">\(\alpha_{3}=k_{3} \alpha_{1}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I I)\)</span> 的极大无关组。</p>
+<p>这里 <span class="arithmatex">\(\alpha_{5}\)</span> 与 <span class="arithmatex">\(\alpha_{3}, \alpha_{4}\)</span> 线性相关 <span class="arithmatex">\(\Rightarrow \alpha_{5}\)</span> 与 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 线性相关。 </p>
+<p>综上, <span class="arithmatex">\(r\left(\alpha_{1}, \alpha_{2}, \alpha_{4}, \alpha_{5}\right)=r\left(\alpha_{1}, \alpha_{4}, \alpha_{5}\right)=r\left(\alpha_{1}, \alpha_{4}\right)=2\)</span>.</p>
+<p>【详解】</p>
+<ol>
+<li>
+<p>证明 <span class="arithmatex">\(r(I)=1, \alpha_{1}, \alpha_{2}, \alpha_{3}\)</span> 非零 <span class="arithmatex">\(\Rightarrow \alpha_{1}\)</span> 为 <span class="arithmatex">\((I)\)</span> 的极大无关组, <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \alpha_{3}\)</span> 线性相关。</p>
+<p><span class="arithmatex">\(r(I)=1 \Rightarrow\)</span> 向量组 <span class="arithmatex">\((I)\)</span> 的极大无关组仅 1 个向量。</p>
+<p>又 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}, \alpha_{3}\)</span> 非零, 则任一向量即 <span class="arithmatex">\((I)\)</span> 的极大无关组。</p>
+<p>令 <span class="arithmatex">\(\alpha_{1}\)</span> 为极大无关组, </p>
+<p>则 <span class="arithmatex">\(\alpha_{2}\)</span> 可由 <span class="arithmatex">\(\alpha_{1}\)</span> 线性表出, </p>
+<p>即存在非零实数 <span class="arithmatex">\(k_{2}\)</span> 使得 <span class="arithmatex">\(\alpha_{2}=k_{2} \alpha_{10}\)</span>
+同理, 存在非零实数 <span class="arithmatex">\(k_{3}\)</span> 使得 <span class="arithmatex">\(\alpha_{3}=k_{3} \alpha_{1}\)</span>.</p>
+</li>
+<li>
+<p>证明由 <span class="arithmatex">\(r(I I)=2, \alpha_{1}, \alpha_{2}\)</span> 线性相关, 
+则 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I)\)</span> 的极大无关组。
+    由 <span class="arithmatex">\(r(I I)=2\)</span>, 则向量组 <span class="arithmatex">\((I I)\)</span> 的极大无关组仅 2 个向量。</p>
+<p>由 <span class="arithmatex">\(\alpha_{1}, \alpha_{2}\)</span> 线性相关,</p>
+<p>则 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 无关 <span class="arithmatex">\((\)</span> 否则 <span class="arithmatex">\(r(I I)=1)\)</span>,</p>
+<p>则 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I)\)</span> 的极大无关组。</p>
+</li>
+<li>
+<p>证明由 <span class="arithmatex">\(r(I I I)=2\)</span>, 则 <span class="arithmatex">\(\alpha_{3}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I I)\)</span> 的极大无关组。</p>
+<p>由 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 为 <span class="arithmatex">\((I I)\)</span> 的极大无关组, </p>
+<p>可知 <span class="arithmatex">\(\alpha_{3}=k_{3} \alpha_{1}\)</span> 与 <span class="arithmatex">\(\alpha_{4}\)</span> 无关。</p>
+<p>由 <span class="arithmatex">\(r(I I I)=2\)</span>, 则向量组 <span class="arithmatex">\((I I I)\)</span> 的极大无关组仅 2 个向量。</p>
+<p>因 <span class="arithmatex">\(\alpha_{3}, \alpha_{4}\)</span> 线性无关, </p>
+<p>必有 <span class="arithmatex">\(\alpha_{5}\)</span> 与 <span class="arithmatex">\(\alpha_{3}, \alpha_{4}\)</span> 线性相关 (否则 <span class="arithmatex">\(\left.r(I I I)=3\right) \Rightarrow \alpha_{5}\)</span> 与 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 线性相关。</p>
+</li>
+<li>
+<p>由 <span class="arithmatex">\(\alpha_{2}=k_{2} \alpha_{1}\)</span>,</p>
+<p>有 <span class="arithmatex">\(r\left(\alpha_{1}, \alpha_{2}, \alpha_{4}, \alpha_{5}\right)=r\left(\alpha_{1}, \alpha_{4}, \alpha_{5}\right)\)</span>.</p>
+<p>由 <span class="arithmatex">\(\alpha_{5}\)</span> 与 <span class="arithmatex">\(\alpha_{1}, \alpha_{4}\)</span> 线性相关, <span class="arithmatex">\(r\left(\alpha_{1}, \alpha_{4}, \alpha_{5}\right)=r\left(\alpha_{1}, \alpha_{4}\right)=2\)</span>.</p>
+</li>
+</ol>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 行列式与矩阵" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              行列式与矩阵
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-footer__link md-footer__link--next" aria-label="Next: 线性方程组" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              线性方程组
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>
