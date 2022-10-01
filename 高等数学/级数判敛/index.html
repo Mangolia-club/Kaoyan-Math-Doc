@@ -1,0 +1,1423 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.4">
+    
+    
+      
+        <title>级数判敛 - 考研数学文档 Kmath</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.80dcb947.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="考研数学文档 Kmath" class="md-header__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            考研数学文档 Kmath
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              级数判敛
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-tabs__link md-tabs__link--active">
+        高等数学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-tabs__link">
+        线性代数
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chap1.md" class="md-tabs__link">
+        概率论
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-tabs__link">
+      其他相关概念
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="考研数学文档 Kmath" class="md-nav__button md-logo" aria-label="考研数学文档 Kmath" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    考研数学文档 Kmath
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RadleyJiao/Kaoyan-Math-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          高等数学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="高等数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          高等数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="md-nav__link">
+        函数极限
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/" class="md-nav__link">
+        数列极限
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%BF%9E%E7%BB%AD%E3%80%81%E9%97%B4%E6%96%AD%E4%B8%8E%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        连续、间断与导数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        中值定理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        积分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        微分方程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          级数判敛
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        级数判敛
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    考纲
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    收敛
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    常数项级数
+  </a>
+  
+    <nav class="md-nav" aria-label="常数项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    基本性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    两个重要的常数项级数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    正项级数
+  </a>
+  
+    <nav class="md-nav" aria-label="正项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    审敛法
+  </a>
+  
+    <nav class="md-nav" aria-label="审敛法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    比较审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    比值审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    根值审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    积分敛散法（了解）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    交错级数
+  </a>
+  
+    <nav class="md-nav" aria-label="交错级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    技巧
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    条件收敛与绝对收敛
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    一般规律及方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          线性代数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="线性代数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+        行列式与矩阵
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%A7%A9%E4%B8%8E%E5%90%91%E9%87%8F/" class="md-nav__link">
+        秩与向量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="md-nav__link">
+        线性方程组
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="md-nav__link">
+        特征值与特征向量
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          概率论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chap1.md" class="md-nav__link">
+        chap1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其他相关概念
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    考纲
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    导图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    收敛
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    常数项级数
+  </a>
+  
+    <nav class="md-nav" aria-label="常数项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    基本性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    两个重要的常数项级数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    正项级数
+  </a>
+  
+    <nav class="md-nav" aria-label="正项级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    审敛法
+  </a>
+  
+    <nav class="md-nav" aria-label="审敛法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    比较审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    比值审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    根值审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    积分敛散法（了解）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    交错级数
+  </a>
+  
+    <nav class="md-nav" aria-label="交错级数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    审敛法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    技巧
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    条件收敛与绝对收敛
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    一般规律及方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    例题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/RadleyJiao/Kaoyan-Math-Doc/edit/master/docs/高等数学/级数判敛.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="_1"><strong>级数判敛</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<blockquote>
+<p>在学习时听一听来自大野雄二的Smoke Gets In Your Eyes吧~</p>
+</blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=488846&auto=0&height=66"></iframe>
+
+<hr />
+<h2 id="_2"><strong>考纲</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<details class="点击展开">
+<summary>点击展开</summary>
+<ol>
+<li>理解常数项级数收敛、发散以及收敛级数的和的概念, 掌握级数的基本性质及收敛的必 要条件.</li>
+<li>掌握几何级数与 <span class="arithmatex">\(p\)</span> 级数的收敛与发散的条件.</li>
+<li>掌握正项级数收敛性的比较判别法、比值判别法、根值判别法, 会用积分判别法.</li>
+<li>掌握交错级数的莱布尼茨判别法.</li>
+<li>了解任意项级数绝对收敛与条件收敛的概念以及绝对收敛与收敛的关系.</li>
+<li>了解函数项级数的收敛域及和函数的概念.</li>
+<li>理解幂级数收敛半径的概念, 并掌握幂级数的收敛半径、收敛区间及收敛域的求法.
+8.了解幂级数在其收敛区间内的基本性质 (和函数的连续性、逐项求导和逐项积分), 会求 一些幂级数在收敛区间内的和函数,并会由此求出某些数项级数的和.</li>
+<li>了解函数展开为泰勒级数的充分必要条件.</li>
+<li>掌握 <span class="arithmatex">\(\mathrm{e}^{x}, \sin x, \cos x, \ln (1+x)\)</span> 与 <span class="arithmatex">\((1+x)^{\alpha}\)</span> 的麦克劳林 <span class="arithmatex">\((\)</span> Maclaurin <span class="arithmatex">\()\)</span> 展开式, 会用它们 将一些简单函数间接展开为幂级数.</li>
+<li>了解傅里叶级数的概念和狄利克雷收敛定理,会将定义在 <span class="arithmatex">\([-l, l]\)</span> 上的函数展开为傅里叶 级数,会将定义在 <span class="arithmatex">\([0, l]\)</span> 上的函数展开为正弦级数与余弦级数,会写出傅里叶级数的和函数的表达式.</li>
+</ol>
+</details>
+<div class="admonition 个人理解">
+<p class="admonition-title">个人理解</p>
+<p>级数判敛是级数章节中最为重要的部分，也是难点比较集中的部分，可以和中值定理，数列极限、积分等章节出大题考察，综合性比较强。</p>
+</div>
+<hr />
+<h2 id="_3"><strong>导图</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="https://app.bestzixue.com/diagram/knowledge_flowchart_calc_series-sum.jpg" /></p>
+<hr />
+<h2 id="_4"><strong>收敛</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>称 <span class="arithmatex">\(S_{n}=a_{1}+a_{2}+\cdots+a_{n}\)</span> 为级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 的部分和, </p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} S_{n}\)</span> 存在, 称 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 收敛, </p>
+<p>设 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} S_{n}=S\)</span>, 称 <span class="arithmatex">\(S\)</span> 为级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 的和, </p>
+<p>记 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}=S\)</span>; </p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} S_{n}\)</span> 不存在, 称 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 发散.</p>
+</li>
+<li>
+<p><strong>级数收敛的必要条件：<span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} u_{n}=0\)</span>,</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>以下哪个数列的级数 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty} u_{n}\)</span> 收敛?</p>
+<p>A. <span class="arithmatex">\(\left\{u_{n}\right\}=\{1,2,3,4, \cdots\}\)</span></p>
+<p>B. <span class="arithmatex">\(\left\{u_{n}\right\}=\{1,1,1,1, \cdots\}\)</span></p>
+<p>C. <span class="arithmatex">\(\left\{u_{n}\right\}=\left\{\frac{1}{2}+\frac{1}{n^{2}}\right\}\)</span></p>
+<p>D. <span class="arithmatex">\(\left\{u_{n}\right\}=\left\{\frac{1}{n !}\right\}\)</span></p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<p><h3>根据级数收敛的必要条件， <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} u_{n}=0\)</span>, </p>
+<p>用排除法，选项 <span class="arithmatex">\(\mathrm{A}, \mathrm{B}, \mathrm{C}\)</span> 的通项都不趋向于 0 . </p>
+<p>其中， A: <span class="arithmatex">\(\lim _{n \rightarrow \infty} u_{n}\)</span> 不存在,</p>
+<p>B: <span class="arithmatex">\(\lim _{n \rightarrow \infty} u_{n}=1\)</span>,</p>
+<p>C: <span class="arithmatex">\(\lim _{n \rightarrow \infty} u_{n}=\frac{1}{2}\)</span>,</p>
+<p>因此选 D.</p>
+</details>
+<p>//结合极限定义、数列极限（夹逼法、定积分定义）即可判断简单的级数敛散。</p>
+<hr />
+<h2 id="_5"><strong>常数项级数</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>各项都为常数的级数</li>
+</ul>
+<h3 id="_6"><strong>基本性质</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}=A, \sum\limits_{n=1}^{\infty} b_{n}=B\)</span>, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left(a_{n} \pm b_{n}\right)=\sum\limits_{n=1}^{\infty} a_{n} \pm \sum\limits_{n=1}^{\infty} b_{n}=A \pm B\)</span>.</p>
+</li>
+<li>
+<p>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}=S\)</span>, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} k a_{n}=k \sum\limits_{n=1}^{\infty} a_{n}=k S\)</span> (其中 <span class="arithmatex">\(k\)</span> 为常数)</p>
+<p>特别地, 若 <span class="arithmatex">\(k \neq 0\)</span>, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 与 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} k a_{n}\)</span> 具有相同的敛散性.</p>
+</li>
+<li>
+<p>级数去掉、添加、改变有限项, 不改变级数的敛散性 </p>
+<p>(但可能收敛于不同的和).</p>
+</li>
+<li>
+<p>若一个级数收敛,则任意添加括号后的级数收敛, 且收敛于相同的和, 反之不对.</p>
+</li>
+</ol>
+<h3 id="_7"><strong>两个重要的常数项级数</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(p\)</span> 级数
+   （或称hyperharmonic series，即超调和级数）</li>
+</ol>
+<p>调和级数：p=1，即<span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n}\)</span>, 它是发散的。</p>
+<p>名字源于泛音及泛音列（泛音列与调和级数英文同为harmonic series）</p>
+<p>关于这个还有个有趣的文章<a href="https://www.zhihu.com/question/19705229/answer/124426802">为什么调和级数 N 分之一是发散的，而 N 平方分之一是收敛的？ - 马同学的回答 - 知乎</a></p>
+<p>WikiPedia上也有一篇关于调和级数的佯谬，可以增进直观理解：<a href="https://zh.wikipedia.org/wiki/%E8%B0%83%E5%92%8C%E7%BA%A7%E6%95%B0#%E4%BD%AF%E8%B0%AC">链接</a></p>
+<ul>
+<li>
+<p>形如 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{p}}\)</span> 称为 <span class="arithmatex">\(p\)</span> 级数, 其中 <span class="arithmatex">\(p\)</span> 为常数.</p>
+</li>
+<li>
+<p>敛散性判断</p>
+</li>
+</ul>
+<p>当 <span class="arithmatex">\(p&gt;1\)</span> 时, 级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{p}}\)</span> 收敛; </p>
+<p>当 <span class="arithmatex">\(p \leqslant 1\)</span> 时, 级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{p}}\)</span> 发散.</p>
+<ol>
+<li>
+<p>几何级数</p>
+<ul>
+<li>
+<p>形如 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty} a q^{n}(a \neq 0)\)</span> 为几何级数. 等比数列求和即为几何级数.</p>
+</li>
+<li>
+<p>敛散性判断</p>
+<p>当 <span class="arithmatex">\(|q| \geqslant 1\)</span> 时, 级数发散; </p>
+<p>当 <span class="arithmatex">\(|q|&lt;1\)</span> 时, <span class="arithmatex">\(\sum\limits_{n=0}^{\infty} a q^{n}=\frac{a}{1-q}\)</span>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<hr />
+<h2 id="_8"><strong>正项级数</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>每项都大于0的级数</li>
+</ul>
+<hr />
+<h3 id="_9"><strong>审敛法</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<hr />
+<p>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 为正项级数, <span class="arithmatex">\(S_{n}=a_{1}+a_{2}+\cdots+a_{n}\)</span> 为级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 的部分和, 显然 <span class="arithmatex">\(\left\{S_{n}\right\}\)</span> 单调递增. </p>
+<ul>
+<li>
+<p>若 <span class="arithmatex">\(\left\{S_{n}\right\}\)</span> 无上界时, <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} S_{n}=+\infty\)</span>, 此 时级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 发散;</p>
+</li>
+<li>
+<p>若存在 <span class="arithmatex">\(M&gt;0\)</span>, 使得 <span class="arithmatex">\(S_{n} \leqslant M\)</span>, 即 <span class="arithmatex">\(\left\{S_{n}\right\}\)</span> 有上界时, <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} S_{n}\)</span> 存在,从而级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 收敛.</p>
+</li>
+</ul>
+<hr />
+<h4 id="_10"><strong>比较审敛法</strong><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><strong>基本形式</strong></p>
+<p>设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 及 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} b_{n}\)</span> 为两正项级数,</p>
+<p>(1) 若 <span class="arithmatex">\(a_{n} \leqslant b_{n}(n=1,2, \cdots)\)</span> 且 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} b_{n}\)</span> 收敛, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 一定收敛.</p>
+<p>(2) 若 <span class="arithmatex">\(a_{n} \leqslant b_{n}(n=1,2, \cdots)\)</span> 且 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 发散, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} b_{n}\)</span> 一定发散.</p>
+<p><mark class="critic">个人理解： 大收小收，小散大散。</mark>没有找到图，但是还是比较易懂的。</p>
+</li>
+<li>
+<p><strong>极限形式</strong></p>
+<div class="arithmatex">\[
+\lim \limits_{n \rightarrow \infty} \frac{u_{n}}{v_{n}}
+\begin{cases}=0, 则\sum\limits_{n=1}^{\infty} v_{n}收敛\Rightarrow \sum\limits_{n=1}^{\infty} u_{n}收敛
+\\=l(0&lt;l&lt;+\infty)，同敛散
+\\=\infty则\sum\limits_{n=1}^{\infty} v_{n}发散\Rightarrow \sum\limits_{n=1}^{\infty} u_{n}发散
+\end{cases}
+\]</div>
+<p><mark class="critic">个人理解：一般的渐进无穷大的比较，还是比较浅显的，主要是比较两个数列趋向无穷大的「速度」</mark></p>
+<blockquote>
+<p>已知 <span class="arithmatex">\(\lim \limits_{x \rightarrow \infty} \frac{f(x) g(x)}{3^{x}}=0\)</span>, 其中 <span class="arithmatex">\(f(x) g(x) \geq 0\)</span>, </p>
+<p>判断该级数的敛散性: <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{f(n) g(n)}{3^{n}(n+1)^{2}}\)</span>.</p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<p><h3>【分析】</p>
+<p><span class="arithmatex">\(n \rightarrow \infty\)</span> 时， <span class="arithmatex">\(\frac{f(n) g(n)}{3^{n}(n+1)^{2}} \sim \frac{f(n) g(n)}{3^{n} n^{2}} .\)</span> 注意到 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{\frac{f(n) g(n)}{3^{n} n^{2}}}{\frac{1}{n^{2}}}=\lim \limits_{n \rightarrow \infty} \frac{f(n) g(n)}{3^{n}}=0\)</span> ，使用比较法判断原级数敛散性。</p>
+<p>【解答】</p>
+<p>因为 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{\frac{f(n) g(n)}{3^{n}(n+1)^{2}}}{\frac{1}{n^{2}}}=\lim \limits_{n \rightarrow \infty} \frac{f(n) g(n)}{3^{n}} \cdot \frac{n^{2}}{(n+1)^{2}}=0\)</span>, </p>
+<p>则根据正项级数的比较判别法，若级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{2}}\)</span> 收敛 <span class="arithmatex">\(\Rightarrow \sum\limits_{n=1}^{\infty} \frac{f(n) g(n)}{3^{n}(n+1)^{2}}\)</span> 收敛。</p>
+<p><span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{p}}\)</span> 在 <span class="arithmatex">\(p&gt;1\)</span> 时收敛， <span class="arithmatex">\(p \leq 1\)</span> 时发散，则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{2}}\)</span> 收敛，</p>
+<p>进而原级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{f(n) g(n)}{3^{n}\left(n^{3}+1\right)^{2}}\)</span> 收敛。故选 <span class="arithmatex">\(\mathrm{C}\)</span>.</p>
+</details>
+<blockquote>
+<p>已知 <span class="arithmatex">\(\lambda&gt;0\)</span>, 且 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n}\)</span> 发散，判断级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left[1-\cos \left(\frac{\lambda}{\sqrt{n}}\right)\right]\)</span>敛散。</p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<p><h3>由 <span class="arithmatex">\(1-\cos x\)</span> 的等价无穷小，</p>
+<p>在 <span class="arithmatex">\(n \rightarrow \infty\)</span> 时有 <span class="arithmatex">\(1-\cos \left(\frac{\lambda}{\sqrt{n}}\right) \sim \frac{1}{2} \cdot \frac{\lambda^{2}}{n} \cdot\)</span> </p>
+<p>则 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{1-\cos \left(\frac{\lambda}{\sqrt{n}}\right)}{\frac{1}{n}}=\lim \limits_{n \rightarrow \infty} \frac{\frac{1}{2} \cdot \frac{\lambda^{2}}{n}}{\frac{1}{n}}=\frac{1}{2} \lambda^{2}\)</span>. </p>
+<p>根据比较法的极限形式，级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left[1-\cos \left(\frac{\lambda}{\sqrt{n}}\right)\right]\)</span> </p>
+<p>与级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n}\)</span> 同敛散。 </p>
+<p>由于级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n}\)</span> 发散，</p>
+<p>故级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left[1-\cos \left(\frac{\lambda}{\sqrt{n}}\right)\right]\)</span> 也发散。</p>
+</details>
+<blockquote>
+<p>令 <span class="arithmatex">\(u_{n}=\sqrt{n} \sin \left(\frac{1}{n^{a}}\right)\)</span>, 关于级数 <span class="arithmatex">\(\sum_{n=1}^{\infty} u_{n}\)</span></p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<p><h3>使用 <span class="arithmatex">\(\sin x\)</span> 的等价无穷小，有 <span class="arithmatex">\(n \rightarrow \infty\)</span> 时 <span class="arithmatex">\(\sqrt{n} \sin \left(\frac{1}{n^{a}}\right) \sim \frac{\sqrt{n}}{n^{a}}=\frac{1}{n^{a-\frac{1}{2}}}\)</span>, </p>
+<p>即 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{\sqrt{n} \sin \left(\frac{1}{n^{a}}\right)}{\frac{1}{n^{a-\frac{1}{2}}}}=\lim \limits_{n \rightarrow \infty} \frac{\frac{1}{n^{a-\frac{1}{2}}}}{\frac{1}{n^{a-\frac{1}{2}}}}=1\)</span>. 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \sqrt{n} \sin \left(\frac{1}{n^{a}}\right)\)</span> 与 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{a-\frac{1}{2}}}\)</span> 同敛散。</p>
+<p>又有 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{1}{n^{p}}\)</span> 在 <span class="arithmatex">\(p&gt;1\)</span> 时收敛， <span class="arithmatex">\(p \leq 1\)</span> 时发散。这里 <span class="arithmatex">\(p=a-\frac{1}{2}\)</span>.</p>
+<p>故，在 <span class="arithmatex">\(a&gt;\frac{3}{2}\)</span> 时，级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 收敛; 在 <span class="arithmatex">\(a \leq \frac{3}{2}\)</span> 时，级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 发散。</p>
+</details>
+</li>
+</ol>
+<hr />
+<h4 id="_11"><strong>比值审敛法</strong><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\lim \limits_{n \rightarrow \infty} \frac{a_{n+1}}{a_{n}}=\rho
+\begin{cases}&lt;1\Rightarrow 收敛
+\\=1\Rightarrow 不定
+\\&gt;1\Rightarrow 发散
+\end{cases}
+\]</div>
+<div class="admonition 个人理解">
+<p class="admonition-title">个人理解</p>
+<p>用于带有<mark class="critic">阶乘</mark>的级数</p>
+</div>
+<hr />
+<h4 id="_12"><strong>根值审敛法</strong><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} \sqrt[n]{a_{n}}=\rho
+\begin{cases}&lt;1\Rightarrow 收敛
+\\=1\Rightarrow 不定
+\\&gt;1\Rightarrow 发散
+\end{cases}
+\]</div>
+<div class="admonition 个人理解">
+<p class="admonition-title">个人理解</p>
+<p>用于带有<mark class="critic">指数</mark>的级数，和比值审敛法比较像。</p>
+</div>
+<hr />
+<h4 id="_13"><strong>积分敛散法</strong>（了解）<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p>设<span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 为正项级数, <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调递减, 令 <span class="arithmatex">\(a_{n}=f(n)\)</span>, 则级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} a_{n}\)</span> 收敛的充要条件是 <span class="arithmatex">\(\int_{1}^{+\infty} f(x) \mathrm{d} x\)</span> 收敛.</p>
+<div class="admonition 个人理解">
+<p class="admonition-title">个人理解</p>
+<p>虽然仅仅是要求了解即可，但是想多讲一句。计算机中储存的离散的值进行求积分的时候也是将积分看作是连加。实际上，积分不正是在一段定义域上被无限等分的矩形面积和吗？</p>
+</div>
+<hr />
+<hr />
+<h2 id="_14"><strong>交错级数</strong><a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li>形如<span class="arithmatex">\(\sum\limits_{n=1}^{\infty}(-1)^{n-1} a_{n}\)</span> 或 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}(-1)^{n} a_{n}\)</span> ，<mark class="critic">其中 <span class="arithmatex">\(a_{n}&gt;0\)</span></mark>, <span class="arithmatex">\((n=1,2\cdots)\)</span>.</li>
+</ul>
+<hr />
+<h3 id="_15"><strong>审敛法</strong><a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>莱布尼茨判别法： 设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}(-1)^{n-1} a_{n}\)</span> 为交错级数 <span class="arithmatex">\(\left(a_{n}&gt;0, n=1,2, \cdots\right)\)</span>, 若 <span class="arithmatex">\(\left\{a_{n}\right\}\)</span> 单调减少且 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}=0\)</span>, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}(-1)^{n-1} a_{n}\)</span> 一定收敛.</p>
+<p>（1）交错级数的两个条件是交错级数收敛的充分条件, 不一定必要.</p>
+<p>（2） <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} u_{n}=0\)</span> 也是交错级数收敛的必要条件. 但 <span class="arithmatex">\(\left\{u_{n}\right\}\)</span> 不单调递减,则交错级数可能 收敛也可能发散.</p>
+<h3 id="_16"><strong>技巧</strong><a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sin (n \pi+x)=(-1)^{n} \sin x\)</span>**</p>
+<p>例题</p>
+<blockquote>
+<p>关于 <span class="arithmatex">\(\sin \left(\pi \sqrt{n^{2}+4}\right), n \in \mathbb{Z}^{+}\)</span>, 下列哪一项是正确的?</p>
+<p>A. 原式 <span class="arithmatex">\(=\sin \left(n \pi+\pi \sqrt{n^{2}+4}-n \pi\right)=(-1)^{n} \sin \left(\frac{4 \pi}{\sqrt{n^{2}+4}+n}\right)\)</span>.</p>
+<p>B. 原式 <span class="arithmatex">\(=\sin \left(n \pi+\pi \sqrt{n^{2}+4}-n \pi\right)=\sin \left(\frac{4 \pi}{\sqrt{n^{2}+4}+n}\right)\)</span>.</p>
+<p>C. 原式 <span class="arithmatex">\(=\sin \left(2 n \pi+\pi \sqrt{n^{2}+4}-2 n \pi\right)=(-1)^{n} \sin \left(\frac{4 \pi}{\sqrt{n^{2}+4}+2 n}\right)\)</span>.</p>
+<p>D. 原式 <span class="arithmatex">\(=\sin \left(2 n \pi+\pi \sqrt{n^{2}+4}-2 n \pi\right)=\sin \left(\frac{4 \pi}{\sqrt{n^{2}+4}+2 n}\right)\)</span>.</p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<h3>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\sin \left(\pi \sqrt{n^{2}+4}\right)\\
+=&amp;\sin \left(n \pi+\pi \sqrt{n^{2}+4}-n \pi\right)\\
+=&amp;\sin \left(n \pi+\frac{\pi\left(\sqrt{n^{2}+4}-n\right)\left(\sqrt{n^{2}+4}+n\right)}{\sqrt{n^{2}+4}+n}\right)\\
+=&amp;\sin \left(n \pi+\frac{4 \pi}{\sqrt{n^{2}+4}+n}\right)\\
+=&amp;(-1)^{n} \sin \left(\frac{4\pi}{\sqrt{n^{2}+4}+n}\right)
+\end{aligned}
+\]</div>
+<p>选 A.</p>
+</details>
+</li>
+</ol>
+<hr />
+<hr />
+<h2 id="_17"><strong>条件收敛与绝对收敛</strong><a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<ol>
+<li>若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left|u_{n}\right|\)</span> 收敛, 则称 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 绝对收敛;</li>
+<li>
+<p>若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 收敛, 而 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left|u_{n}\right|\)</span> 发散, 称 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 为条件收敛.</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 绝对收敛, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 收敛, 反之不对.</p>
+</li>
+</ol>
+<h2 id="_18"><strong>一般规律及方法</strong><a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>注意使用如下直观的口诀: <mark class="critic">添加括号提高级数的收敛性</mark>; 一般项趋向于零的速度越快级数收敛的可能性越大; <mark class="critic">添加绝对值提高级数的发散性</mark>.</p>
+</li>
+<li>
+<p>常数项级数敛散性判断的一般次序:</p>
+<ol>
+<li>
+<p>级数收敛的必要条件;</p>
+</li>
+<li>
+<p>根据定义判断常数项级数的敛散性;</p>
+</li>
+<li>
+<p>确定具体的级数类型:</p>
+<p>正项级数:比较审敛法、比值审敛法、根值审敛法、积分审敛法等; </p>
+<p>交错级数:莱布尼茨审敛法;</p>
+<p>任意级数:绝对与条件收敛.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>正项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 收敛的充分必要条件是 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{2 n-1}\)</span> 与 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{2 n}\)</span> 都收敛.
+   源于列与子列极限的关系：子列有极限<span class="arithmatex">\(\Leftrightarrow\)</span>列有极限。</p>
+</li>
+</ol>
+<p>可以挑选部分n来规避一些比较棘手的部分 :P.</p>
+<ol>
+<li>对三个级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}, \sum\limits_{n=1}^{\infty} v_{n}, \sum\limits_{n=1}^{\infty}\left(u_{n} \pm v_{n}\right)\)</span>,
+(1) 若其中两个收敛,则另一个一定收敛;
+(2) 若其中两个发散,则另一个敛散性不确定;
+(3) 若一个收敛一个发散,则另一个一定发散. (5) 若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}\)</span> 收敛, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\left|u_{n}\right|\)</span>, <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} u_{n}^{2}, \sum\limits_{n=1}^{\infty}(-1)^{n} u_{n}, \sum\limits_{n=1}^{\infty} \frac{(-1)^{n}}{n} u_{n}, \sum\limits_{n=1}^{\infty} u_{n} u_{n+1}\)</span> 都不一定收敛.</li>
+</ol>
+<h2 id="_19"><strong>例题</strong><a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>（2014真题）设数列 <span class="arithmatex">\(\left\{a_{n}\right\},\left\{b_{n}\right\}\)</span> 满足 <span class="arithmatex">\(0&lt;a_{n}&lt;\frac{\pi}{2}\)</span>, <span class="arithmatex">\(0&lt;b_{n}&lt;\frac{\pi}{2}\)</span>, <span class="arithmatex">\(\cos a_{n}-a_{n}=\cos b_{n}\)</span>, 且级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} b_{n}\)</span> 收敛。</p>
+<p>1) 证明: <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} a_{n}=0\)</span>.</p>
+<p>2) 证明: 级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{a_{n}}{b_{n}}\)</span> 收敛。</p>
+</blockquote>
+<details class="答案">
+<summary>答案</summary>
+<p><h3>
+1)</p>
+<p><span class="arithmatex">\(\cos a_{n}-a_{n}=\cos b_{n}\)</span></p>
+<p><span class="arithmatex">\(\sum_{n=1}^{\infty} b_{n}\)</span> 收敛,
+<span class="arithmatex">\(\lim _{n \rightarrow \infty} b_{n}=0\)</span></p>
+<p>设<span class="arithmatex">\(a_n\)</span>极限存在，<span class="arithmatex">\(\lim _{n \rightarrow \infty} a_{n}=A\)</span></p>
+<p>则<span class="arithmatex">\(\cos A-A=1\)</span></p>
+<p><span class="arithmatex">\(\cos A=1+A\)</span></p>
+<p>而由<span class="arithmatex">\(0&lt;a_{n}&lt;\frac{\pi}{2}\)</span>, 
+则<span class="arithmatex">\(0 \leqslant A \leqslant \frac{\pi}{2}\)</span></p>
+<p><span class="arithmatex">\(\cos A \leqslant 1, A \leqslant 0\)</span></p>
+<p><span class="arithmatex">\(A=0\)</span>, 即<span class="arithmatex">\(\lim \limits_{n\rightarrow \infty} a_{n}=0\)</span></p>
+<p>2)</p>
+<p>由题设, <span class="arithmatex">\(n \rightarrow \infty\)</span> 时</p>
+<p>有 <span class="arithmatex">\(1-\cos a_{n}+a_{n} \sim \frac{1}{2} a_{n}^{2}+a_{n} \sim a_{n} \)</span> ; </p>
+<p><span class="arithmatex">\(1-\cos b_{n} \sim \frac{b_{n}^{2}}{2}\)</span>. </p>
+<p>又因为 <span class="arithmatex">\(\cos a_{n}-a_{n}=\cos b_{n}\)</span> ， </p>
+<p>即 <span class="arithmatex">\(1-\cos a_{n}+a_{n}=1-\cos b_{n}\)</span> </p>
+<p>于 是 <span class="arithmatex">\(a_{n} \sim \frac{b_{n}^{2}}{2}\)</span>.</p>
+<p>则计算 <span class="arithmatex">\(\lim \limits_{n \rightarrow \infty} \frac{a_{n}}{b_{n}^{2}}\)</span>, </p>
+<p>使用比较法证明原级数敛散性:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim \limits_{n \rightarrow \infty} \frac{\frac{a_{n}}{b_{n}}}{b_{n}} &amp;=\lim \limits_{n \rightarrow \infty} \frac{a_{n}}{b_{n}^{2}} \\
+&amp;=\lim \limits_{n \rightarrow \infty} \frac{1-\cos a_{n}+a_{n}}{2\left(1-\cos b_{n}\right)} \\
+&amp;=\frac{1}{2} \lim \limits_{n \rightarrow \infty} \frac{1-\cos a_{n}+a_{n}}{1-\cos b_{n}} \\
+&amp;=\frac{1}{2}
+\end{aligned}
+\]</div>
+<p>根据比较法的极限形式， <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{a_{n}}{b_{n}}\)</span> 与 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} b_{n}\)</span> 同敛散，故 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty} \frac{a_{n}}{b_{n}}\)</span> 收敛。</p>
+<p><mark class="critic">题目关键点在于看出cosx之后有凑1-cosx的意识。</mark></p>
+</details>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 微分方程" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              微分方程
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E8%A1%8C%E5%88%97%E5%BC%8F%E4%B8%8E%E7%9F%A9%E9%98%B5/" class="md-footer__link md-footer__link--next" aria-label="Next: 行列式与矩阵" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              行列式与矩阵
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>
