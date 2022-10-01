@@ -21,7 +21,7 @@
 网易云：[Mangolia](https://music.163.com/#/user/home?id=281344790)
 
 ## 链接
-部署于Github，访问请点击 http://kmath.mangolia.club/
+部署于Github，访问请点击 http://kmath.mangolia.space/
 
 （处于半墙状态，好在是免费的，如果打不开请更改运营商后重试，比如WiFi换成流量）
 
